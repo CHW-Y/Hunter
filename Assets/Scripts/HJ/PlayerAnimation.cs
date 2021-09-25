@@ -32,7 +32,7 @@ public class PlayerAnimation : MonoBehaviour
         //  플레이어 공격 애니메이션 경직 테스트용
         if (Input.GetKeyDown(KeyCode.L))
         {
-            StartCoroutine(StopPlayerAni(0.1f));
+            StopPlayerAni(0.1f);
         }
     }
 
@@ -44,12 +44,7 @@ public class PlayerAnimation : MonoBehaviour
             aniValue = Mathf.Lerp(aniValue, 0.5f, Time.deltaTime * 5.0f);
     }
 
-    /// <summary>
-    /// 플레이어 애니메이션을 일정 시간동안 경직시키는 함수
-    /// </summary>
-    /// <param name="stopTime">경직 시간</param>
-    /// <returns></returns>
-    public IEnumerator StopPlayerAni(float stopTime)
+    IEnumerator MyStopPlayerAni(float stopTime)
     {
         float t = 0;
         while (t < stopTime)
@@ -63,4 +58,13 @@ public class PlayerAnimation : MonoBehaviour
         yield return null;
     }
 
+    /// <summary>
+    /// 플레이어 애니메이션을 일정 시간동안 경직시키는 함수
+    /// </summary>
+    /// <param name="stopTime">경직 시간</param>
+    /// <returns></returns>
+    public void StopPlayerAni(float stopTime)
+    {
+        StartCoroutine(MyStopPlayerAni(stopTime));
+    }
 }

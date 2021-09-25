@@ -49,7 +49,7 @@ public class CameraMove : MonoBehaviour
         //  카메라 쉐이크 테스트용
         if (Input.GetKeyDown(KeyCode.P))
         {
-            StartCoroutine(CameraShake(0.5f, 1.5f));
+            CameraShake(0.5f, 1.5f);
         }
 
         //  카메라와 타겟 사이 Ray
@@ -62,9 +62,9 @@ public class CameraMove : MonoBehaviour
     void FixedUpdate()
     {
         //  카메라가 부드럽게 따라가는 코드        
-        //pos = Vector3.Lerp(pos, targetTransform.position, 10f * Time.fixedDeltaTime);
+        pos = Vector3.Lerp(pos, targetTransform.position, 15f * Time.fixedDeltaTime);
         //  정확하게 따라가는 코드
-        pos = targetTransform.position;
+        //pos = targetTransform.position;
     }
     
     private void LateUpdate()
@@ -88,22 +88,27 @@ public class CameraMove : MonoBehaviour
         targetTransform = target;
     }
 
-    /// <summary>
-    /// 카메라 떨림(쉐이크) 함수
-    /// </summary>
-    /// <param name="shakeTime">얼마나 오래 카메라 떨림(쉐이크)이 나타날지 설정하는 시간 값</param>
-    /// <param name="shakePower">카메라 떨림(쉐이크)의 강도 값 (최소값 0 최대값 1.5)</param>
-    /// <returns></returns>
-    public IEnumerator CameraShake(float shakeTime, float shakePower)
+    IEnumerator MyCameraShake(float shakeTime, float shakePower)
     {        
         float t = 0;
         float p = -Mathf.Clamp(shakePower, 0f, 1.5f) / 10f;        
         while(t < shakeTime)
         {
             pos += new Vector3(0, p, 0);
-            p *= -1f * 0.95f;
+            p *= -1f;
             t += Time.deltaTime;
             yield return null;
         }        
+    }
+
+    /// <summary>
+    /// 카메라 떨림(쉐이크) 함수
+    /// </summary>
+    /// <param name="shakeTime">얼마나 오래 카메라 떨림(쉐이크)이 나타날지 설정하는 시간 값</param>
+    /// <param name="shakePower">카메라 떨림(쉐이크)의 강도 값 (최소값 0 최대값 1.5)</param>
+    /// <returns></returns>
+    public void CameraShake(float shakeTime, float shakePower)
+    {
+        StartCoroutine(MyCameraShake(shakeTime, shakePower));
     }
 }

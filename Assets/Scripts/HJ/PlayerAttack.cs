@@ -14,17 +14,18 @@ public class PlayerAttack : MonoBehaviour
     public Animator am;
     [Tooltip("플레이어 무브 스크립트")]
     public PlayerMove pm;
-
-    bool weaponColCheck;
+    [Tooltip("플레이어 무기의 충돌 감지 스크립트")]
+    public WeaponColCheck weaponCol;
+    
     //  true일 경우에만 공격 입력을 받게하는 bool 변수    
     [HideInInspector]
     public bool attackInputChance;
-
 
     void Start()
     {
         if (am == null) am = GetComponent<Animator>();
         if (pm == null) pm = GetComponent<PlayerMove>();
+        if (weaponCol == null) weaponCol = GetComponentInChildren<WeaponColCheck>();
 
         attackInputChance = true;
 
@@ -41,6 +42,7 @@ public class PlayerAttack : MonoBehaviour
             HammerSwingPattern1();            
         }
 
+        //  무기 꺼내기/넣기 함수 실행
         if (Input.GetKeyDown(KeyCode.F))
         {
             StartCoroutine(SheatheWeapon());
@@ -48,12 +50,14 @@ public class PlayerAttack : MonoBehaviour
 
     }
 
+    //  애니메이션 이벤트용 함수
     void TurnOnAttack()
     {
         am.SetBool("AttackBool", false);
         attackInputChance = true;
     }
 
+    //  애니메이션 이벤트용 함수
     void TurnOffAttack()
     {
         attackInputChance = false;
@@ -121,5 +125,18 @@ public class PlayerAttack : MonoBehaviour
             playerWeapon.SetActive(true);
         }
         
+    }
+
+    //  애니메이션 이벤트용 함수
+    void ResetColList()
+    {
+        weaponCol.ResetList();
+    }
+
+    //  애니메이션 이벤트용 함수
+    void WeaponColBool(float value)
+    {
+        weaponCol.ColBoxChange();
+        weaponCol.SetAttackValue(value, pm.attackPower);
     }
 }
