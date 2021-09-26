@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTransform: {fileID: 0}
+  bossTargetTransform: {fileID: 0}
   distance: 3.4
   cameraRotateSpeed: 1.5
 --- !u!114 &3910636505458902286

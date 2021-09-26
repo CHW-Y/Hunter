@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/HJ/MainScene.unity
-    guid: 2ea9a1bf187a6114fa4602aa989638b0
+    path: Assets/Scenes/HJ/SnowMountains 1.unity
+    guid: 80e615e0c9071414397b0cd82dcc5b44
   m_configObjects: {}

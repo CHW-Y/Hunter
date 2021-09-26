@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {    
-    [Tooltip("추적할 대상의 Transform")]
+    [Tooltip("추적할 플레이어의 Transform")]
     public Transform targetTransform;
+    [Tooltip("추적할 보스의 Transform")]
+    public Transform bossTargetTransform;
     [Tooltip("카메라와 타겟 사이의 거리 값")]
     public float distance = 3.0f;
     [Tooltip("카메라 회전 속도 값")]
@@ -21,13 +23,14 @@ public class CameraMove : MonoBehaviour
     Ray originRay;
     RaycastHit hitInfo;
 
+    Coroutine lookOnCor;
+
     void Start()
     {        
         targetTransform = targetTransform == null ? GameObject.Find("Player").transform : targetTransform;
         pos = targetTransform.position;
         originPos = new GameObject();
-        originPos.name = "OriginCameraPosObject";
-        
+        originPos.name = "OriginCameraPosObject";        
     }
     
     void Update()
@@ -43,13 +46,25 @@ public class CameraMove : MonoBehaviour
         //  마우스 휠로 카메라와 타겟 거리 조절
         //distance += -Input.GetAxis("Mouse ScrollWheel");
 
-        rotateY = Mathf.Clamp(rotateY, -60f, 60f);
+        rotateY = Mathf.Clamp(rotateY, -45f, 45f);
         distance = Mathf.Clamp(distance, 1.5f, 4.5f);
 
         //  카메라 쉐이크 테스트용
         if (Input.GetKeyDown(KeyCode.P))
         {
             CameraShake(0.5f, 1.5f);
+        }
+
+        //  플레이어의 카메라가 적 보스를 한 번 추적하는 함수
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if(lookOnCor != null) StopCoroutine(lookOnCor);
+            lookOnCor = StartCoroutine(LookOnCamera());            
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            print(rotateX);
         }
 
         //  카메라와 타겟 사이 Ray
@@ -95,7 +110,7 @@ public class CameraMove : MonoBehaviour
         while(t < shakeTime)
         {
             pos += new Vector3(0, p, 0);
-            p *= -1f;
+            p *= -1f * 0.98f;
             t += Time.deltaTime;
             yield return null;
         }        
@@ -110,5 +125,31 @@ public class CameraMove : MonoBehaviour
     public void CameraShake(float shakeTime, float shakePower)
     {
         StartCoroutine(MyCameraShake(shakeTime, shakePower));
+    }
+
+    /// <summary>
+    /// 플레이어의 카메라가 적 보스를 한 번 추적하는 함수
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator LookOnCamera()
+    {
+        if (bossTargetTransform == null)
+        {
+            bossTargetTransform = GameObject.Find("Boss").transform;
+        }
+        
+        float time = 0;
+        Quaternion a = transform.rotation;        
+        print(originPos.transform.rotation.eulerAngles.y);        
+
+        while (time <= 1.5f)
+        {
+            originPos.transform.LookAt(bossTargetTransform);
+            transform.rotation = Quaternion.Slerp(a, originPos.transform.rotation, time);            
+            rotateX = transform.rotation.eulerAngles.y;
+
+            time += Time.fixedDeltaTime * 5.0f;
+            yield return null;
+        }
     }
 }

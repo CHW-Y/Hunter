@@ -33,13 +33,25 @@ public class WeaponColCheck : MonoBehaviour
             if (!currentAttackEnemyList.Contains(other.transform.root.name))
             {
                 currentAttackEnemyList.Add(other.transform.root.name);
+                Vector3 contactPos = other.gameObject.GetComponent<Collider>().ClosestPointOnBounds(transform.position);
                 print("어택!");
-                GameObject go = Instantiate(textGo, other.gameObject.GetComponent<Collider>().ClosestPointOnBounds(transform.position), Quaternion.identity);
+                
+                GameObject go = Instantiate(textGo, contactPos, Quaternion.identity);
                 go.name = "HitPoint";
 
                 GameManager.gm.am.StopPlayerAni(0.1f);
                 GameManager.gm.cm.CameraShake(0.15f + attackTypePower * 0.01f, attackTypePower * 0.1f);
-                //공격함수
+
+                if (other.tag.Equals("Head"))
+                {
+                    GameManager.gm.um.SpawnDamageText(contactPos , attackTypePower * playerAttackPower *1.5f);
+                }
+                else
+                {
+                    GameManager.gm.um.SpawnDamageText(contactPos, attackTypePower * playerAttackPower);
+                }
+                //공격함수 넣어야됨
+
                 //other.gameObject.GetComponent<Collider>().ClosestPointOnBounds(transform.position);                
             }
         }

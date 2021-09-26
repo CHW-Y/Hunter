@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+[RequireComponent(typeof(UIManager))]
 //  게임 매니저 스크립트
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class GameManager : MonoBehaviour
 
     [Tooltip("CameraMove 스크립트")]
     public CameraMove cm;
+
+    [Tooltip("UIManager 스크립트")]
+    public UIManager um;
 
     private void Awake()
     {
@@ -30,6 +34,7 @@ public class GameManager : MonoBehaviour
     {
         if (am == null) am = GameObject.Find("Player").GetComponent<PlayerAnimation>();
         if (cm == null) cm = GameObject.Find("Main Camera").GetComponent<CameraMove>();
+        if (um == null) um = GetComponent<UIManager>();
     }
 
 }

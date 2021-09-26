@@ -34,6 +34,14 @@ public class PlayerAnimation : MonoBehaviour
         {
             StopPlayerAni(0.1f);
         }
+
+        if (am.GetCurrentAnimatorStateInfo(2).IsName("SwingReady"))
+        {
+            if(am.GetFloat("AniSpeed") != 1f)
+            {
+                am.SetFloat("AniSpeed", 1f);
+            }
+        }
     }
 
     void PlayerMoveAni()
@@ -54,7 +62,7 @@ public class PlayerAnimation : MonoBehaviour
             yield return null;
         }
 
-        am.SetFloat("AniSpeed", 1f);
+        am.SetFloat("AniSpeed", 1.05f);
         yield return null;
     }
 
