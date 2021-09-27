@@ -686,7 +686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   moveSpeed: 5
-  attackRange: 1
+  attackRange: 5
   basicAttackTrigger: {fileID: 172680799}
   bossState: 0
 --- !u!195 &-5647130539520392156
