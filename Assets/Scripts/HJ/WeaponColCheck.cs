@@ -26,6 +26,14 @@ public class WeaponColCheck : MonoBehaviour
         currentAttackEnemyList = new List<string>();        
     }
 
+    private void Update()
+    {
+        if (GameManager.gm.pa.pm.dodgeStateCheck)
+        {
+            colBox.enabled = false;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {        
         if (other.gameObject.layer == LayerMask.NameToLayer("Boss"))
@@ -39,17 +47,18 @@ public class WeaponColCheck : MonoBehaviour
                 GameObject go = Instantiate(textGo, contactPos, Quaternion.identity);
                 go.name = "HitPoint";
 
-                GameManager.gm.am.StopPlayerAni(0.1f);
-                GameManager.gm.cm.CameraShake(0.15f + attackTypePower * 0.01f, attackTypePower * 0.1f);
+                GameManager.gm.am.StopPlayerAni(0.1f);                
 
                 if (other.tag.Equals("Head"))
                 {
                     GameManager.gm.um.SpawnDamageText(contactPos , attackTypePower * playerAttackPower *1.5f);
+                    GameManager.gm.cm.CameraShake(0.18f + attackTypePower * 0.01f, attackTypePower * 0.12f);
                 }
                 else
                 {
                     GameManager.gm.um.SpawnDamageText(contactPos, attackTypePower * playerAttackPower);
-                }
+                    GameManager.gm.cm.CameraShake(0.1f + attackTypePower * 0.01f, attackTypePower * 0.05f);
+                }                
                 //공격함수 넣어야됨
 
                 //other.gameObject.GetComponent<Collider>().ClosestPointOnBounds(transform.position);                
@@ -72,6 +81,15 @@ public class WeaponColCheck : MonoBehaviour
     {
         if (colBox.enabled) colBox.enabled = false;
         else colBox.enabled = true;
+    }
+
+    /// <summary>
+    /// 무기의 콜라이더 컴포넌트를 비활성화/활성화 하는 함수 (매개변수가 있는 형태)
+    /// </summary>
+    /// <param name="check">활성화 유무 값</param>
+    public void ColBoxChange(bool check)
+    {
+        colBox.enabled = check;
     }
 
     /// <summary>

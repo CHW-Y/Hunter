@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour
     [Tooltip("UIManager 스크립트")]
     public UIManager um;
 
+    [Tooltip("PlayerAttack 스크립트")]
+    public PlayerAttack pa;
+
     private void Awake()
     {
         if(gm == null)
@@ -35,6 +38,7 @@ public class GameManager : MonoBehaviour
         if (am == null) am = GameObject.Find("Player").GetComponent<PlayerAnimation>();
         if (cm == null) cm = GameObject.Find("Main Camera").GetComponent<CameraMove>();
         if (um == null) um = GetComponent<UIManager>();
+        if (pa == null) pa = GameObject.Find("Player").GetComponent<PlayerAttack>();
     }
 
 }

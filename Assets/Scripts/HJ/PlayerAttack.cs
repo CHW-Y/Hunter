@@ -27,8 +27,7 @@ public class PlayerAttack : MonoBehaviour
         if (pm == null) pm = GetComponent<PlayerMove>();
         if (weaponCol == null) weaponCol = GetComponentInChildren<WeaponColCheck>();
 
-        attackInputChance = true;
-
+        attackInputChance = true;        
         StartCoroutine(CheckAttackInputChance());
         StartCoroutine(CheckAttackReadyState());
     }
@@ -136,7 +135,8 @@ public class PlayerAttack : MonoBehaviour
     //  애니메이션 이벤트용 함수
     void WeaponColBool(float value)
     {
-        weaponCol.ColBoxChange();
         weaponCol.SetAttackValue(value, pm.attackPower);
+        weaponCol.ColBoxChange();
+        
     }
 }

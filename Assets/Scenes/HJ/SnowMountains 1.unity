@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.738, g: 0.7843138, b: 0.86274517, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.007
+  m_FogDensity: 0.01
   m_LinearFogStart: 10
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 430593030}
-  m_IndirectSpecularColor: {r: 0.58058655, g: 0.62038237, b: 0.7042141, a: 1}
+  m_IndirectSpecularColor: {r: 0.5805817, g: 0.6204378, b: 0.7042616, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 2038009912}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 99a99f8825906e5469b80ff7ef4e138a, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -332,7 +332,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!108 &430593030
 Light:
@@ -385,7 +385,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -895,6 +895,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
   m_PrefabInstance: {fileID: 669966748}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &724800752 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1798635931, guid: b0b2735e935c79143a0ed5fb9acc313a, type: 3}
+  m_PrefabInstance: {fileID: 562513968}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bba90c595dab54a82e9a32cec6bb76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &916148693 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 450190, guid: 5b90ea85d2f0d9c4c88d6a6fb1246845, type: 3}
@@ -1952,8 +1963,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910428144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -58.7, y: 0.5, z: 75.9}
-  m_LocalScale: {x: 54.2766, y: 54.276596, z: 54.276596}
+  m_LocalPosition: {x: -58.7, y: 0.5, z: -31.5}
+  m_LocalScale: {x: 40, y: 40, z: 40}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -2075,67 +2086,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: edc40406f07f9cf4990807aa8b0fc368, type: 3}
---- !u!850595691 &2038009912
-LightingSettings:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Settings.lighting
-  serializedVersion: 3
-  m_GIWorkflowMode: 0
-  m_EnableBakedLightmaps: 1
-  m_EnableRealtimeLightmaps: 1
-  m_RealtimeEnvironmentLighting: 1
-  m_BounceScale: 1
-  m_AlbedoBoost: 1
-  m_IndirectOutputScale: 1
-  m_UsingShadowmask: 0
-  m_BakeBackend: 0
-  m_LightmapMaxSize: 1024
-  m_BakeResolution: 40
-  m_Padding: 2
-  m_TextureCompression: 1
-  m_AO: 0
-  m_AOMaxDistance: 1
-  m_CompAOExponent: 0
-  m_CompAOExponentDirect: 0
-  m_ExtractAO: 0
-  m_MixedBakeMode: 1
-  m_LightmapsBakeMode: 1
-  m_FilterMode: 1
-  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
-  m_ExportTrainingData: 0
-  m_TrainingDataDestination: TrainingData
-  m_RealtimeResolution: 2
-  m_ForceWhiteAlbedo: 0
-  m_ForceUpdates: 0
-  m_FinalGather: 0
-  m_FinalGatherRayCount: 1024
-  m_FinalGatherFiltering: 1
-  m_PVRCulling: 1
-  m_PVRSampling: 1
-  m_PVRDirectSampleCount: 32
-  m_PVRSampleCount: 512
-  m_PVREnvironmentSampleCount: 512
-  m_PVREnvironmentReferencePointCount: 2048
-  m_LightProbeSampleCountMultiplier: 4
-  m_PVRBounces: 2
-  m_PVRMinBounces: 2
-  m_PVREnvironmentMIS: 0
-  m_PVRFilteringMode: 0
-  m_PVRDenoiserTypeDirect: 0
-  m_PVRDenoiserTypeIndirect: 0
-  m_PVRDenoiserTypeAO: 0
-  m_PVRFilterTypeDirect: 0
-  m_PVRFilterTypeIndirect: 0
-  m_PVRFilterTypeAO: 0
-  m_PVRFilteringGaussRadiusDirect: 1
-  m_PVRFilteringGaussRadiusIndirect: 5
-  m_PVRFilteringGaussRadiusAO: 2
-  m_PVRFilteringAtrousPositionSigmaDirect: 0.5
-  m_PVRFilteringAtrousPositionSigmaIndirect: 2
-  m_PVRFilteringAtrousPositionSigmaAO: 1
 --- !u!1001 &2113712700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2581,6 +2531,10 @@ PrefabInstance:
       propertyPath: cm
       value: 
       objectReference: {fileID: 311492560}
+    - target: {fileID: 4962776657595084164, guid: 87572e055bb3b6a4dab7bf2d76b064f3, type: 3}
+      propertyPath: pa
+      value: 
+      objectReference: {fileID: 724800752}
     - target: {fileID: 4962776657595084165, guid: 87572e055bb3b6a4dab7bf2d76b064f3, type: 3}
       propertyPath: m_Name
       value: GameManager

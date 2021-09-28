@@ -11,7 +11,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 0.36680585, y: 0.22232541, z: 0.19}
+  m_Size: {x: 0.36680585, y: 0.22232541, z: 0.28}
   m_Center: {x: 0.000000029802326, y: 0.000000044703487, z: 0.015}
 --- !u!114 &2702012438782937097
 MonoBehaviour:
@@ -133,8 +133,9 @@ MonoBehaviour:
   attackStateCheck: 0
   moveStateCheck: 0
   dashStateCheck: 0
-  invincibleStateCheck: 0
+  absoluteStateCheck: 0
   battleReadyCheck: 0
+  dodgeReadyCheck: 0
 --- !u!114 &1873336652
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,6 +10,8 @@ public class PlayerMove : PlayerStats
     
     Vector3 move;
     float dodgeMoveSpeed;
+    Quaternion dodgeRot;
+    Vector3 dodgeVec;
     //  WASD 키를 눌러서 이동중인지 체크하는 변수
     bool moveCheck;
     Quaternion rotate;
@@ -29,10 +31,9 @@ public class PlayerMove : PlayerStats
     }
 
     void Update()
-    {        
+    {
         //  WASD 조작
-        if (!attackStateCheck) move = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        else move = Vector3.zero;
+        move = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));        
 
         //  카메라를 기준으로 회전
         move = Camera.main.transform.TransformDirection(move);
@@ -44,7 +45,7 @@ public class PlayerMove : PlayerStats
             //  이동 조작을 입력받았는지를 체크하는 moveCheck 활성화
             moveCheck = true;
             moveStateCheck = true;
-            if (moveCheck) rotate = Quaternion.LookRotation(new Vector3(move.x, 0, move.z));            
+            if (moveCheck && dodgeReadyCheck && !attackStateCheck) rotate = Quaternion.LookRotation(new Vector3(move.x, 0, move.z));            
 
             //  왼쪽 Shift키 입력시 달리기 함수 실행
             if (Input.GetKey(KeyCode.LeftShift) &&
@@ -69,13 +70,34 @@ public class PlayerMove : PlayerStats
             {
                 Dodge();
             }
+
+            //  회피 가능 상태 채크
+            if (GameManager.gm.am.am.GetCurrentAnimatorStateInfo(2).IsName("Dodge")
+                || GameManager.gm.am.am.GetCurrentAnimatorStateInfo(2).IsName("Damaged"))
+            {
+                dodgeReadyCheck = false;
+            }
+            else
+            {
+                if (!absoluteStateCheck)
+                {
+                    dodgeReadyCheck = true;
+                }
+            }
         }
+        //  이동 입력을 받지 않으면 움직임 상태 채크 관련 변수들 false
         else
         {
             moveCheck = false;
             moveStateCheck = false;
             dashStateCheck = false;
             rotate = transform.rotation;
+        }
+
+        //  공격중일 때는 이동하지 못하게 최종 속도를 0으로 한다.
+        if (attackStateCheck)
+        {
+            totalMoveSpeed = 0;
         }
     }
 
@@ -87,8 +109,8 @@ public class PlayerMove : PlayerStats
             playerController.Move(transform.forward * totalMoveSpeed * Time.deltaTime);            
         }
 
-        //  플레이어 대쉬 이동
-        playerController.Move(transform.forward * dodgeMoveSpeed * Time.deltaTime);
+        //  플레이어 회피 이동
+        playerController.Move(dodgeVec * dodgeMoveSpeed * Time.deltaTime);
 
         //  플레이어에 중력 적용
         playerController.Move(new Vector3(0, gravity, 0) * Time.deltaTime);
@@ -131,41 +153,28 @@ public class PlayerMove : PlayerStats
     //  플레이어가 공격 중일 때, 무기를 집어넣고 있을 때, 피격받은 상태일 때, 이미 회피를 실행중일 때 실행불가
     void Dodge()
     {
-        //  회피 가능 상태 채크
-        if (GameManager.gm.am.am.GetCurrentAnimatorStateInfo(2).IsName("Dodge")
-            || GameManager.gm.am.am.GetCurrentAnimatorStateInfo(2).IsName("Damaged"))
-        {
-            dodgeReadyCheck = false;
-        }
-        else
-        {
-            if (!absoluteStateCheck)
-            {
-                dodgeReadyCheck = true;
-            }
-        }
         if (dodgeReadyCheck)
         {
-            transform.rotation = rotate;
+            StartCoroutine(DodgeStateCheck());
+            dodgeVec = move;
+            dodgeRot = Quaternion.LookRotation(new Vector3(move.x, 0, move.z));
+            rotate = dodgeRot;
             GameManager.gm.am.am.SetTrigger("DodgeTrig");
+            GameManager.gm.am.am.SetBool("AttackBool", false);
+            GameManager.gm.pa.weaponCol.ColBoxChange(false);
             StartCoroutine(SetAbsoluteStateTime(0.266f));
             StartCoroutine(DodgeMove());
             dodgeReadyCheck = false;
         }
     }
 
-    /// <summary>
-    /// 회피(구르기)가 가능한 상태를 체크하는 bool 변수를 true/false 하는 함수
-    /// </summary>
-    public void DodgeStateOnOff(bool check)
-    {
-        dodgeReadyCheck = check;
-    }
-
+    //  dodgeMoveSpeed 를 조정해서 구르기 효과를 내는 함수
     IEnumerator DodgeMove()
     {
         float time = 0;
-        dodgeMoveSpeed = 7f;
+        dodgeMoveSpeed = 6.5f;
+        transform.rotation = dodgeRot;
+        yield return null;
         while(time < 1f)
         {
             dodgeMoveSpeed -= Time.deltaTime * 5.0f;
@@ -173,6 +182,16 @@ public class PlayerMove : PlayerStats
             yield return null;
         }
         dodgeMoveSpeed = 0f;
+    }
+
+    //  dodgeState 상태 채크
+    IEnumerator DodgeStateCheck()
+    {
+        dodgeStateCheck = true;
+        yield return new WaitUntil(() => GameManager.gm.am.am.GetCurrentAnimatorStateInfo(2).IsName("Dodge")
+                                    && GameManager.gm.am.am.GetCurrentAnimatorStateInfo(2).normalizedTime >= 1.0f);
+        GameManager.gm.pa.weaponCol.ResetList();
+        dodgeStateCheck = false;
     }
 
     /// <summary>

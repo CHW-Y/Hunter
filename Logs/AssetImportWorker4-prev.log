@@ -9,17 +9,17 @@ C:\Program Files\Unity\Hub\Editor\2020.3.12f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker0
+AssetImportWorker4
 -projectPath
 C:/Hunter
 -logFile
-Logs/AssetImportWorker0.log
+Logs/AssetImportWorker4.log
 -srvPort
 14560
 Successfully changed project path to: C:/Hunter
 C:/Hunter
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 1206.20 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 707.20 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.12f1 (b3b2c6512326)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
