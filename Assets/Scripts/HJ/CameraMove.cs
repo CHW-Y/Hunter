@@ -44,7 +44,7 @@ public class CameraMove : MonoBehaviour
         }
 
         //  마우스 휠로 카메라와 타겟 거리 조절
-        //distance += -Input.GetAxis("Mouse ScrollWheel");
+        distance += -Input.GetAxis("Mouse ScrollWheel");
 
         rotateY = Mathf.Clamp(rotateY, -45f, 45f);
         distance = Mathf.Clamp(distance, 1.5f, 4.5f);
@@ -60,11 +60,6 @@ public class CameraMove : MonoBehaviour
         {
             if(lookOnCor != null) StopCoroutine(lookOnCor);
             lookOnCor = StartCoroutine(LookOnCamera());            
-        }
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            print(rotateX);
         }
 
         //  카메라와 타겟 사이 Ray

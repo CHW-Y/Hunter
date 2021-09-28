@@ -40,10 +40,13 @@ public class PlayerStats : MonoBehaviour
     public bool dashStateCheck;
     [HideInInspector]
     //  무적 상태
-    public bool invincibleStateCheck;
+    public bool absoluteStateCheck;
     [HideInInspector]
     //  공격 대기 중인 상태(발도 상태)
     public bool battleReadyCheck;
+    //[HideInInspector]
+    //  회피(구르기)가 가능한 상태
+    public bool dodgeReadyCheck;
 
     private void Awake()
     {
