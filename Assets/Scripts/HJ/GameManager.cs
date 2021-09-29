@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
     [Tooltip("PlayerAttack 스크립트")]
     public PlayerAttack pa;
 
+    [Tooltip("ParticleManager 스크립트")]
+    public ParticleManager particleM;
+
     private void Awake()
     {
         if(gm == null)
@@ -39,6 +42,7 @@ public class GameManager : MonoBehaviour
         if (cm == null) cm = GameObject.Find("Main Camera").GetComponent<CameraMove>();
         if (um == null) um = GetComponent<UIManager>();
         if (pa == null) pa = GameObject.Find("Player").GetComponent<PlayerAttack>();
+        if (particleM == null) particleM = GetComponent<ParticleManager>();
     }
 
 }

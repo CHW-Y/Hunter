@@ -52,12 +52,14 @@ public class WeaponColCheck : MonoBehaviour
                 if (other.tag.Equals("Head"))
                 {
                     GameManager.gm.um.SpawnDamageText(contactPos , attackTypePower * playerAttackPower *1.5f);
-                    GameManager.gm.cm.CameraShake(0.18f + attackTypePower * 0.01f, attackTypePower * 0.12f);
+                    GameManager.gm.cm.CameraShake(0.2f + attackTypePower * 0.01f, attackTypePower * 0.18f);
+                    GameManager.gm.particleM.ActiveHitParticle(contactPos, ParticleManager.HitParticle.Hit_Type1);
                 }
                 else
                 {
                     GameManager.gm.um.SpawnDamageText(contactPos, attackTypePower * playerAttackPower);
-                    GameManager.gm.cm.CameraShake(0.1f + attackTypePower * 0.01f, attackTypePower * 0.05f);
+                    GameManager.gm.cm.CameraShake(0.15f + attackTypePower * 0.01f, attackTypePower * 0.1f);
+                    GameManager.gm.particleM.ActiveHitParticle(contactPos, ParticleManager.HitParticle.Hit_Type2);
                 }                
                 //공격함수 넣어야됨
 
