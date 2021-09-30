@@ -16,11 +16,16 @@ public class BossFSM : MonoBehaviour
         Die
     }
 
+    public WeaponColCheck weaponCol;
+
     public Transform target;
     public float moveSpeed = 5.0f;
     public float attackRange = 0.5f;
     public BoxCollider basicAttackTrigger;
     public BossState bossState = BossState.Sleep;
+
+    public int maxHP = 1000;
+    public int currentHP = 0;
 
     NavMeshAgent agent;
     Animator anim;
@@ -33,9 +38,14 @@ public class BossFSM : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
+        weaponCol = GetComponentInChildren<WeaponColCheck>();
+
         ac = anim.runtimeAnimatorController;
 
         basicAttackTrigger.enabled = false;
+
+        // 현재 체력을 최대 체력으로 올려놓는다.
+        currentHP = maxHP;
     }
 
     void Update()
@@ -70,10 +80,12 @@ public class BossFSM : MonoBehaviour
     void Sleep()
     {
         // 피격 시 Walk 상태로 전환
-
-        // 걷기 애니메이션 실행
-        anim.SetTrigger("Walk");
-        bossState = BossState.Walk;
+        if (currentHP < maxHP)
+        {
+            // 걷기 애니메이션 실행
+            anim.SetTrigger("Walk");
+            bossState = BossState.Walk;
+        }
     }
 
     void Idle()
@@ -222,5 +234,10 @@ public class BossFSM : MonoBehaviour
         }
 
         return delayTime;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        weaponCol
     }
 }
