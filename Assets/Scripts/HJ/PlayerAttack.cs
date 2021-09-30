@@ -136,7 +136,11 @@ public class PlayerAttack : MonoBehaviour
     void WeaponColBool(float value)
     {
         weaponCol.SetAttackValue(value, pm.attackPower);
-        weaponCol.ColBoxChange();
+        weaponCol.ColBoxChange();        
+    }
+
+    void PlaySwingSound()
+    {
         
     }
 }

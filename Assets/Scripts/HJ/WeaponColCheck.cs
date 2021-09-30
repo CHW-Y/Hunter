@@ -47,19 +47,22 @@ public class WeaponColCheck : MonoBehaviour
                 GameObject go = Instantiate(textGo, contactPos, Quaternion.identity);
                 go.name = "HitPoint";
 
-                GameManager.gm.am.StopPlayerAni(0.1f);                
+                GameManager.gm.am.StopPlayerAni(0.125f);                
 
                 if (other.tag.Equals("Head"))
                 {
                     GameManager.gm.um.SpawnDamageText(contactPos , attackTypePower * playerAttackPower *1.5f);
                     GameManager.gm.cm.CameraShake(0.2f + attackTypePower * 0.01f, attackTypePower * 0.18f);
                     GameManager.gm.particleM.ActiveHitParticle(contactPos, ParticleManager.HitParticle.Hit_Type1);
+                    GameManager.gm.soundM.PlayEffectSound("hammer_hit3", 1f);
+                    GameManager.gm.soundM.PlayEffectSound("headstunattack1", 0.5f);
                 }
                 else
                 {
                     GameManager.gm.um.SpawnDamageText(contactPos, attackTypePower * playerAttackPower);
                     GameManager.gm.cm.CameraShake(0.15f + attackTypePower * 0.01f, attackTypePower * 0.1f);
                     GameManager.gm.particleM.ActiveHitParticle(contactPos, ParticleManager.HitParticle.Hit_Type2);
+                    GameManager.gm.soundM.PlayEffectSound("hammer_hit3", 1f);
                 }                
                 //공격함수 넣어야됨
 

@@ -14,6 +14,8 @@ public class PlayerMove : PlayerStats
     Vector3 dodgeVec;
     //  WASD 키를 눌러서 이동중인지 체크하는 변수
     bool moveCheck;
+    //  속도를 올리는 치트키
+    bool moveCheat = false;
     Quaternion rotate;
     float rotateSpeed = 5.0f;
     //  회전 코루틴 함수가 실행중인지 체크하는 변수
@@ -99,6 +101,12 @@ public class PlayerMove : PlayerStats
         {
             totalMoveSpeed = 0;
         }
+
+        //  치트 활성화
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            moveCheat = !moveCheat;
+        }
     }
 
     private void FixedUpdate()
@@ -107,6 +115,11 @@ public class PlayerMove : PlayerStats
         if(moveCheck)
         {
             playerController.Move(transform.forward * totalMoveSpeed * Time.deltaTime);            
+        }
+        else if (moveCheat)
+        {
+            //  치트
+            playerController.Move(transform.forward * Time.deltaTime * 18.0f);
         }
 
         //  플레이어 회피 이동

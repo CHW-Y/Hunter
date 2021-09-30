@@ -24,6 +24,9 @@ public class GameManager : MonoBehaviour
     [Tooltip("ParticleManager 스크립트")]
     public ParticleManager particleM;
 
+    [Tooltip("SoundManager 스크립트")]
+    public SoundManager soundM;
+
     private void Awake()
     {
         if(gm == null)
@@ -43,6 +46,7 @@ public class GameManager : MonoBehaviour
         if (um == null) um = GetComponent<UIManager>();
         if (pa == null) pa = GameObject.Find("Player").GetComponent<PlayerAttack>();
         if (particleM == null) particleM = GetComponent<ParticleManager>();
+        if (soundM == null) soundM = GetComponent<SoundManager>();
     }
 
 }
