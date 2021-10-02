@@ -28,41 +28,48 @@ public class WeaponColCheck : MonoBehaviour
 
     private void Update()
     {
+        // 공격 도중에 회피하면 무기 콜라이더 해제
         if (GameManager.gm.pa.pm.dodgeStateCheck)
         {
             colBox.enabled = false;
-        }
+        }        
     }
 
     private void OnTriggerEnter(Collider other)
     {        
+        //  충돌 대상이 Boos면...
         if (other.gameObject.layer == LayerMask.NameToLayer("Boss"))
-        {
-            if (!currentAttackEnemyList.Contains(other.transform.root.name))
-            {
-                currentAttackEnemyList.Add(other.transform.root.name);
-                Vector3 contactPos = other.gameObject.GetComponent<Collider>().ClosestPointOnBounds(transform.position);
+        {            
+            float resultAttackValue = attackTypePower * playerAttackPower;  //  최종 데미지 계산1
+            resultAttackValue = Mathf.Round(Random.Range(resultAttackValue - 5.0f, resultAttackValue + 5.0f) * 10f) * 0.1f; // 최종 데미지 계산2
+
+            //  한 공격 패턴중 공격에 맞은 상태 리스트에 있는지 체크
+            if (!currentAttackEnemyList.Contains(other.transform.root.name) && resultAttackValue != 0)
+            {                
+                currentAttackEnemyList.Add(other.transform.root.name); //  실행중인 공격 패턴에 맞으면 리스트 추가                
+                Vector3 contactPos = other.gameObject.GetComponent<Collider>().ClosestPointOnBounds(transform.position); //  공격이 맞은 위치
                 print("어택!");
-                
-                GameObject go = Instantiate(textGo, contactPos, Quaternion.identity);
-                go.name = "HitPoint";
 
-                GameManager.gm.am.StopPlayerAni(0.125f);                
+                //GameObject go = Instantiate(textGo, contactPos, Quaternion.identity); //테스트용
+                //go.name = "HitPoint";
 
+                GameManager.gm.am.StopPlayerAni(0.125f); //  공격에 성공시 애니메이션 경직 효과
+
+                //  공격이 맞은 부위가 머리부분이면..
                 if (other.tag.Equals("Head"))
                 {
-                    GameManager.gm.um.SpawnDamageText(contactPos , attackTypePower * playerAttackPower *1.5f);
-                    GameManager.gm.cm.CameraShake(0.2f + attackTypePower * 0.01f, attackTypePower * 0.18f);
-                    GameManager.gm.particleM.ActiveHitParticle(contactPos, ParticleManager.HitParticle.Hit_Type1);
-                    GameManager.gm.soundM.PlayEffectSound("hammer_hit3", 1f);
-                    GameManager.gm.soundM.PlayEffectSound("headstunattack1", 0.5f);
+                    GameManager.gm.um.SpawnDamageText(contactPos , resultAttackValue *1.5f); // 데미지 UI 출력
+                    GameManager.gm.cm.CameraShake(0.2f + attackTypePower * 0.01f, attackTypePower * 0.22f); //  카메라 쉐이크 함수 실행
+                    GameManager.gm.particleM.ActiveHitParticle(contactPos, ParticleManager.HitParticle.Hit_Type1);  //  파티클 함수 실행
+                    GameManager.gm.soundM.PlayEffectSound("hammer_hit4", 1f);   //  공격 사운드 함수 실행1
+                    GameManager.gm.soundM.PlayEffectSound("headstunattack1", 1f);   //  공격 사운드 함수 실행2
                 }
                 else
                 {
-                    GameManager.gm.um.SpawnDamageText(contactPos, attackTypePower * playerAttackPower);
-                    GameManager.gm.cm.CameraShake(0.15f + attackTypePower * 0.01f, attackTypePower * 0.1f);
+                    GameManager.gm.um.SpawnDamageText(contactPos, resultAttackValue);
+                    GameManager.gm.cm.CameraShake(0.15f + attackTypePower * 0.01f, attackTypePower * 0.15f);
                     GameManager.gm.particleM.ActiveHitParticle(contactPos, ParticleManager.HitParticle.Hit_Type2);
-                    GameManager.gm.soundM.PlayEffectSound("hammer_hit3", 1f);
+                    GameManager.gm.soundM.PlayEffectSound("hammer_hit4", 1f);
                 }                
                 //공격함수 넣어야됨
 

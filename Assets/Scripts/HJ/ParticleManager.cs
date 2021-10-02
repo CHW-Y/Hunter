@@ -19,7 +19,7 @@ public class ParticleManager : MonoBehaviour
 
     
     /// <summary>
-    /// 인자값으로 받은 벡터 포지션 위치에 해당 타입의 공격 이펙트를 실행시키는 함수
+    /// 인자값으로 받은 포지션 위치에 해당 타입의 공격 이펙트를 실행시키는 함수
     /// </summary>
     /// <param name="pos">이펙트를 생성할 위치</param>
     /// <param name="type">이펙트의 타입</param>

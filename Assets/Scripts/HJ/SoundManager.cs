@@ -24,9 +24,9 @@ public class SoundManager : MonoBehaviour
 
         object[] readSounds = Resources.LoadAll("Sounds/Effect/", typeof(AudioClip));
 
-        foreach (object readSound in readSounds)
+        foreach (AudioClip readSound in readSounds)
         {
-            audioSource_.Add(readSound.ToString().Split(' ')[0], (AudioClip)readSound);
+            audioSource_.Add(readSound.ToString().Split(' ')[0], readSound);
         }
 
         foreach (KeyValuePair<string, AudioClip> audios in audioSource_)

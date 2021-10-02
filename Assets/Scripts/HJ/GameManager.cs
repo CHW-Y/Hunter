@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        //  Ä³½Ì
         if (am == null) am = GameObject.Find("Player").GetComponent<PlayerAnimation>();
         if (cm == null) cm = GameObject.Find("Main Camera").GetComponent<CameraMove>();
         if (um == null) um = GetComponent<UIManager>();

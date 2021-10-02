@@ -26,7 +26,10 @@ public class CameraMove : MonoBehaviour
     Coroutine lookOnCor;
 
     void Start()
-    {        
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
         targetTransform = targetTransform == null ? GameObject.Find("Player").transform : targetTransform;
         pos = targetTransform.position;
         originPos = new GameObject();
@@ -134,8 +137,7 @@ public class CameraMove : MonoBehaviour
         }
         
         float time = 0;
-        Quaternion a = transform.rotation;        
-        print(originPos.transform.rotation.eulerAngles.y);        
+        Quaternion a = transform.rotation;                 
 
         while (time <= 1.5f)
         {

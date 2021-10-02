@@ -23,6 +23,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Start()
     {
+        //  Ä³½Ì
         if (am == null) am = GetComponent<Animator>();
         if (pm == null) pm = GetComponent<PlayerMove>();
         if (weaponCol == null) weaponCol = GetComponentInChildren<WeaponColCheck>();
@@ -141,6 +142,13 @@ public class PlayerAttack : MonoBehaviour
 
     void PlaySwingSound()
     {
-        
+        if (GameManager.gm.am.am.GetCurrentAnimatorStateInfo(2).IsTag("Attack1"))
+        {
+            GameManager.gm.soundM.PlayEffectSound("hammerswing_op1", 0.6f);
+        }
+        else if (GameManager.gm.am.am.GetCurrentAnimatorStateInfo(2).IsTag("Attack2"))
+        {
+            GameManager.gm.soundM.PlayEffectSound("hammerswing_op2", 0.7f);
+        }
     }
 }
