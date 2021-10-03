@@ -53,7 +53,7 @@ public class BossFSM : MonoBehaviour
         switch (bossState)
         {
             case BossState.Sleep:
-                //Sleep();
+                Sleep();
                 break;
             case BossState.Idle:
                 Idle();
@@ -73,6 +73,15 @@ public class BossFSM : MonoBehaviour
                 break;
             default:
                 break;
+        }
+
+        // 현재 HP가 0이하가 되면
+        if (currentHP <= 0 && bossState != BossState.Die)
+        {
+            bossState = BossState.Die;
+
+            // 죽음 애니메이션 실행
+            anim.SetTrigger("Die");
         }
     }
 
@@ -238,6 +247,6 @@ public class BossFSM : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        weaponCol
+
     }
 }

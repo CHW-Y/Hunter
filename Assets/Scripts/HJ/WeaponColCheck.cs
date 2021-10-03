@@ -113,7 +113,6 @@ public class WeaponColCheck : MonoBehaviour
     {
         attackTypePower = patternPower;
         playerAttackPower = playerPower;
-        print("test ¿ë SetAttackValue");
     }
 
 }
