@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 430593030}
-  m_IndirectSpecularColor: {r: 0.5805817, g: 0.6204378, b: 0.7042616, a: 1}
+  m_IndirectSpecularColor: {r: 0.58058655, g: 0.62038237, b: 0.7042141, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -476,6 +476,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300018, guid: 71ff0e77341aa304c921a48a639924b6, type: 3}
+--- !u!114 &152813489 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8269455438797454203, guid: b0b2735e935c79143a0ed5fb9acc313a, type: 3}
+  m_PrefabInstance: {fileID: 562513968}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558b132174031b549ade76e4de96d7d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &210011199 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6247692913195538702, guid: 71ff0e77341aa304c921a48a639924b6, type: 3}
@@ -3391,6 +3402,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 172680799, guid: 5b90ea85d2f0d9c4c88d6a6fb1246845, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000744629, guid: 5b90ea85d2f0d9c4c88d6a6fb1246845, type: 3}
+      propertyPath: pm
+      value: 
+      objectReference: {fileID: 152813489}
+    - target: {fileID: 2000744629, guid: 5b90ea85d2f0d9c4c88d6a6fb1246845, type: 3}
+      propertyPath: bfsm
+      value: 
+      objectReference: {fileID: 1785672876}
+    - target: {fileID: 4217166099013942795, guid: 5b90ea85d2f0d9c4c88d6a6fb1246845, type: 3}
+      propertyPath: pm
+      value: 
+      objectReference: {fileID: 152813489}
     - target: {fileID: 4217166099013942795, guid: 5b90ea85d2f0d9c4c88d6a6fb1246845, type: 3}
       propertyPath: target
       value: 
@@ -3793,6 +3820,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300010, guid: 71ff0e77341aa304c921a48a639924b6, type: 3}
+--- !u!114 &1785672876 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4217166099013942795, guid: 5b90ea85d2f0d9c4c88d6a6fb1246845, type: 3}
+  m_PrefabInstance: {fileID: 1508895518}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae9d6297d054c014382f17936d7b32b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1895886434
 PrefabInstance:
   m_ObjectHideFlags: 0
