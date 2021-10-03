@@ -16,16 +16,15 @@ public class BossFSM : MonoBehaviour
         Die
     }
 
-    public WeaponColCheck weaponCol;
-
     public Transform target;
     public float moveSpeed = 5.0f;
-    public float attackRange = 0.5f;
+    public float attackRange = 7.0f;
     public BoxCollider basicAttackTrigger;
     public BossState bossState = BossState.Sleep;
 
     public int maxHP = 1000;
     public int currentHP = 0;
+    public int attackDamage = 5;
 
     NavMeshAgent agent;
     Animator anim;
@@ -38,7 +37,6 @@ public class BossFSM : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
-        weaponCol = GetComponentInChildren<WeaponColCheck>();
 
         ac = anim.runtimeAnimatorController;
 
@@ -53,7 +51,7 @@ public class BossFSM : MonoBehaviour
         switch (bossState)
         {
             case BossState.Sleep:
-                //Sleep();
+                Sleep();
                 break;
             case BossState.Idle:
                 Idle();
@@ -73,6 +71,15 @@ public class BossFSM : MonoBehaviour
                 break;
             default:
                 break;
+        }
+
+        // 현재 HP가 0이하가 되면
+        if (currentHP <= 0 && bossState != BossState.Die)
+        {
+            bossState = BossState.Die;
+
+            // 죽음 애니메이션 실행
+            anim.SetTrigger("Die");
         }
     }
 
@@ -141,6 +148,7 @@ public class BossFSM : MonoBehaviour
             currentTime = 0;
 
             basicAttackTrigger.enabled = false;
+
 
             // 대기 애니메이션 실행
             anim.SetTrigger("Idle");
@@ -234,10 +242,5 @@ public class BossFSM : MonoBehaviour
         }
 
         return delayTime;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        
     }
 }
