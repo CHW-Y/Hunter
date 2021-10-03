@@ -30,10 +30,10 @@ public class PlayerAnimation : MonoBehaviour
         am.SetFloat("MoveAni", aniValue);
 
         //  플레이어 공격 애니메이션 경직 테스트용
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            StopPlayerAni(0.1f);
-        }
+        //if (Input.GetKeyDown(KeyCode.L))
+        //{
+        //    StopPlayerAni(0.1f);
+        //}
         
         if (am.GetCurrentAnimatorStateInfo(2).IsName("SwingReady"))
         {
@@ -47,7 +47,7 @@ public class PlayerAnimation : MonoBehaviour
     void PlayerMoveAni()
     {
         if (ps.dashStateCheck)
-            aniValue = Mathf.Lerp(aniValue, 1f, Time.deltaTime * 2.0f);
+            aniValue = Mathf.Lerp(aniValue, 1f, Time.deltaTime * 3.0f);
         else
             aniValue = Mathf.Lerp(aniValue, 0.5f, Time.deltaTime * 5.0f);
     }

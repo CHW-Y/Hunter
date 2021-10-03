@@ -67,9 +67,12 @@ public class PlayerAttack : MonoBehaviour
     void HammerSwingPattern1()
     {
         if (am.GetCurrentAnimatorStateInfo(1).IsName("BattleReady") && attackInputChance)
-        {           
-            am.SetBool("AttackBool", true);
-            attackInputChance = false;            
+        {
+            if (!pm.dodgeStateCheck) 
+            { 
+                am.SetBool("AttackBool", true);
+                attackInputChance = false;
+            }
         }
     }
 
@@ -136,8 +139,8 @@ public class PlayerAttack : MonoBehaviour
     //  애니메이션 이벤트용 함수
     void WeaponColBool(float value)
     {
-        weaponCol.SetAttackValue(value, pm.attackPower);
         weaponCol.ColBoxChange();        
+        weaponCol.SetAttackValue(value, pm.attackPower);
     }
 
     void PlaySwingSound()

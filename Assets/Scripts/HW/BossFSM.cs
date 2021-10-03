@@ -238,6 +238,6 @@ public class BossFSM : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        weaponCol
+        
     }
 }
