@@ -684,13 +684,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae9d6297d054c014382f17936d7b32b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pm: {fileID: 0}
   target: {fileID: 0}
   moveSpeed: 5
-  attackRange: 5
+  attackRange: 7
   basicAttackTrigger: {fileID: 172680799}
   bossState: 0
   maxHP: 1000
   currentHP: 0
+  attackDamage: 5
 --- !u!195 &-5647130539520392156
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4146,6 +4148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 430196}
   - component: {fileID: 172680799}
+  - component: {fileID: 2000744629}
   m_Layer: 7
   m_Name: UpperMouth01
   m_TagString: Head
@@ -4179,5 +4182,26 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 200, y: 50, z: 50}
+  m_Size: {x: 200, y: 100, z: 50}
   m_Center: {x: 0, y: -40, z: 0}
+--- !u!114 &2000744629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97332b47eedebe64889275976fc5ec8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pm: {fileID: 0}
+  target: {fileID: 0}
+  moveSpeed: 5
+  attackRange: 7
+  basicAttackTrigger: {fileID: 0}
+  bossState: 0
+  maxHP: 1000
+  currentHP: 0
+  attackDamage: 5
