@@ -19,7 +19,7 @@ public class PlayerAnimation : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {        
         if (ps.moveStateCheck)
         {
             PlayerMoveAni();
@@ -34,7 +34,7 @@ public class PlayerAnimation : MonoBehaviour
         {
             StopPlayerAni(0.1f);
         }
-
+        
         if (am.GetCurrentAnimatorStateInfo(2).IsName("SwingReady"))
         {
             if(am.GetFloat("AniSpeed") != 1f)

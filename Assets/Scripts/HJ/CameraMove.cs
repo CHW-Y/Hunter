@@ -26,7 +26,10 @@ public class CameraMove : MonoBehaviour
     Coroutine lookOnCor;
 
     void Start()
-    {        
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
         targetTransform = targetTransform == null ? GameObject.Find("Player").transform : targetTransform;
         pos = targetTransform.position;
         originPos = new GameObject();
@@ -44,7 +47,7 @@ public class CameraMove : MonoBehaviour
         }
 
         //  마우스 휠로 카메라와 타겟 거리 조절
-        //distance += -Input.GetAxis("Mouse ScrollWheel");
+        distance += -Input.GetAxis("Mouse ScrollWheel");
 
         rotateY = Mathf.Clamp(rotateY, -45f, 45f);
         distance = Mathf.Clamp(distance, 1.5f, 4.5f);
@@ -60,11 +63,6 @@ public class CameraMove : MonoBehaviour
         {
             if(lookOnCor != null) StopCoroutine(lookOnCor);
             lookOnCor = StartCoroutine(LookOnCamera());            
-        }
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            print(rotateX);
         }
 
         //  카메라와 타겟 사이 Ray
@@ -139,8 +137,7 @@ public class CameraMove : MonoBehaviour
         }
         
         float time = 0;
-        Quaternion a = transform.rotation;        
-        print(originPos.transform.rotation.eulerAngles.y);        
+        Quaternion a = transform.rotation;                 
 
         while (time <= 1.5f)
         {

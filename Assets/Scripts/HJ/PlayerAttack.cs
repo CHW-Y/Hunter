@@ -23,12 +23,12 @@ public class PlayerAttack : MonoBehaviour
 
     void Start()
     {
+        //  캐싱
         if (am == null) am = GetComponent<Animator>();
         if (pm == null) pm = GetComponent<PlayerMove>();
         if (weaponCol == null) weaponCol = GetComponentInChildren<WeaponColCheck>();
 
-        attackInputChance = true;
-
+        attackInputChance = true;        
         StartCoroutine(CheckAttackInputChance());
         StartCoroutine(CheckAttackReadyState());
     }
@@ -136,7 +136,19 @@ public class PlayerAttack : MonoBehaviour
     //  애니메이션 이벤트용 함수
     void WeaponColBool(float value)
     {
-        weaponCol.ColBoxChange();
         weaponCol.SetAttackValue(value, pm.attackPower);
+        weaponCol.ColBoxChange();        
+    }
+
+    void PlaySwingSound()
+    {
+        if (GameManager.gm.am.am.GetCurrentAnimatorStateInfo(2).IsTag("Attack1"))
+        {
+            GameManager.gm.soundM.PlayEffectSound("hammerswing_op1", 0.6f);
+        }
+        else if (GameManager.gm.am.am.GetCurrentAnimatorStateInfo(2).IsTag("Attack2"))
+        {
+            GameManager.gm.soundM.PlayEffectSound("hammerswing_op2", 0.7f);
+        }
     }
 }

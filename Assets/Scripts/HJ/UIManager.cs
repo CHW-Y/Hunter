@@ -19,7 +19,7 @@ public class UIManager : MonoBehaviour
     }
 
     /// <summary>
-    /// 플레이어가 보스를 공격 성공시킨 위치에 데미지 텍스트를 띄우는 함수
+    /// 플레이어가 보스를 공격한 위치에 데미지 텍스트를 띄우는 함수
     /// </summary>
     /// <param name="spawnPos">플레이어의 공격이 맞은 포지션</param>
     /// <param name="damageValue">총 데미지 수치</param>
