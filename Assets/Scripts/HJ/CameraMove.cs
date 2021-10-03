@@ -27,9 +27,12 @@ public class CameraMove : MonoBehaviour
 
     void Start()
     {
+<<<<<<< HEAD
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
+=======
+>>>>>>> main
         targetTransform = targetTransform == null ? GameObject.Find("Player").transform : targetTransform;
         pos = targetTransform.position;
         originPos = new GameObject();

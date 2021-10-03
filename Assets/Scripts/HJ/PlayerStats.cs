@@ -76,7 +76,7 @@ public class PlayerStats : MonoBehaviour
     }
 
     /// <summary>
-    /// value 값을 받아 현재 플레이어의 HP에 더하는 함수
+    /// value 값을 받아 현재 플레이어의 HP에 더하는 함수 (보스에게 피해를 입을 때 플레이어 체력에 데미지를 적용할때 사용)
     /// </summary>
     /// <param name="value"></param>
     public void AddHP(int value)

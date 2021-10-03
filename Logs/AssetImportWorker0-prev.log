@@ -15,11 +15,19 @@ C:/Hunter
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< HEAD
 10275
 Successfully changed project path to: C:/Hunter
 C:/Hunter
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 55.76 ms, found 2 plugins.
+=======
+1935
+Successfully changed project path to: C:/Hunter
+C:/Hunter
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 58.01 ms, found 2 plugins.
+>>>>>>> main
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.12f1 (b3b2c6512326)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
@@ -35,6 +43,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -48,16 +57,36 @@ Mono: successfully reloaded assembly
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
 Registered in 0.006979 seconds.
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56028
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003475 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 53.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.319 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007061 seconds.
+>>>>>>> main
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Completed reload, in  1.162 seconds
+=======
+- Completed reload, in  1.138 seconds
+>>>>>>> main
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 1.50 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1559 Unused Serialized files (Serialized files now loaded: 0)
@@ -66,6 +95,16 @@ System memory in use after: 83.2 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2009.
 Total: 6.757300 ms (FindLiveObjects: 0.174900 ms CreateObjectMapping: 0.069700 ms MarkObjects: 3.470500 ms  DeleteObjects: 3.040900 ms)
+=======
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1708 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.0 MB.
+System memory in use after: 91.0 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2158.
+Total: 2.203300 ms (FindLiveObjects: 0.177800 ms CreateObjectMapping: 0.092500 ms MarkObjects: 1.845400 ms  DeleteObjects: 0.086500 ms)
+>>>>>>> main
 
 AssetImportParameters requested are different than current active one (requested -> active):
   requireTextureImportCompression: false -> true
@@ -80,6 +119,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   path: Assets/Scripts/HJ/PlayerStats.cs
   artifactKey: Guid(cba9be32f6b26e1419e7e5d32bd87953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/HJ/PlayerStats.cs using Guid(cba9be32f6b26e1419e7e5d32bd87953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63314aa69aefd1588ca8aa28ae5f7829') in 0.050170 seconds 
@@ -264,10 +304,553 @@ Received Import Request.
   artifactKey: Guid(73a58d942229b4b47a31ddf8d301e218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Resources/Sounds/Effect/hammerswing_op.mp3 using Guid(73a58d942229b4b47a31ddf8d301e218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a4d430bcbee22a7d3ba637a6d10552d') in 0.014188 seconds 
   Import took 0.017806 seconds .
+=======
+  path: Assets/Scenes/HJ/New Render Texture.renderTexture
+  artifactKey: Guid(f7222980b95f9564a973729bbf8dc59b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/HJ/New Render Texture.renderTexture using Guid(f7222980b95f9564a973729bbf8dc59b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b496bd8e2d7687a9efd086006a09ef5') in 0.089317 seconds 
+  Import took 0.093260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.434336 seconds.
+  path: Assets/Scenes/HJ/SnowMountains 1.unity
+  artifactKey: Guid(80e615e0c9071414397b0cd82dcc5b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/HJ/SnowMountains 1.unity using Guid(80e615e0c9071414397b0cd82dcc5b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d9232eaca5f1c9be0b74488e780fbe3') in 0.003969 seconds 
+  Import took 0.008803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.266679 seconds.
+  path: Assets/Scenes/HJ/SnowMountains 1.unity
+  artifactKey: Guid(80e615e0c9071414397b0cd82dcc5b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/HJ/SnowMountains 1.unity using Guid(80e615e0c9071414397b0cd82dcc5b44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '188b75568620f04bd5174d2cd2bf04d3') in 0.004931 seconds 
+  Import took 0.009813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 260.852394 seconds.
+  path: Assets/Materials/123.mat
+  artifactKey: Guid(86c7a1ea379056743a51e972dd285be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/123.mat using Guid(86c7a1ea379056743a51e972dd285be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a46e5a0f0f210e2318c233c68d8b9c5') in 0.048232 seconds 
+  Import took 0.052474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Missiles/Arcane/ArcaneSphere.mat
+  artifactKey: Guid(958f8c2fa0a6293479194fe50a889381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Missiles/Arcane/ArcaneSphere.mat using Guid(958f8c2fa0a6293479194fe50a889381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35e052a1b4a29e8e19f5ecacce1bb71f') in 0.013594 seconds 
+  Import took 0.016722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/AssetStore/Fantasy Armory/Set_Items2/origin/Materials/angelic_shield_d_f.mat
+  artifactKey: Guid(2c298f9ec05dc2940badd35319543f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Fantasy Armory/Set_Items2/origin/Materials/angelic_shield_d_f.mat using Guid(2c298f9ec05dc2940badd35319543f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b36e12695a70730811ceb70db245cfb') in 0.013681 seconds 
+  Import took 0.016293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Missiles/Arcane/ArcaneLines.mat
+  artifactKey: Guid(c63d8954b4144d04c98219ec9f0e9fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Missiles/Arcane/ArcaneLines.mat using Guid(c63d8954b4144d04c98219ec9f0e9fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2cc9e02281dab48b810fb3807523472') in 0.016085 seconds 
+  Import took 0.019092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura01.mat
+  artifactKey: Guid(7af85c482ccb8044b95074f3fb145d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura01.mat using Guid(7af85c482ccb8044b95074f3fb145d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b5fb8e2fdba18afd8df040d4c53133e') in 0.020806 seconds 
+  Import took 0.024051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura09.mat
+  artifactKey: Guid(e1f52561965fde549bb52a9ee993b073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura09.mat using Guid(e1f52561965fde549bb52a9ee993b073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '284cdfe6a9d368441adaae2b0a4b8596') in 0.014879 seconds 
+  Import took 0.018113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura10.mat
+  artifactKey: Guid(eb21bbfdfbe783e4bb11ea3affd81e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura10.mat using Guid(eb21bbfdfbe783e4bb11ea3affd81e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4637da9cec3a183ed46c322bf611fb96') in 0.014681 seconds 
+  Import took 0.017688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Missiles/Arcane/Arcane_Twirl.mat
+  artifactKey: Guid(6a89627430d3b5b44b6f33272c5af5e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Missiles/Arcane/Arcane_Twirl.mat using Guid(6a89627430d3b5b44b6f33272c5af5e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f4a203e433674ff0734b3710071173d') in 0.010773 seconds 
+  Import took 0.013712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura04.mat
+  artifactKey: Guid(5fffb80392e0ded4a86fdf585dd4b1a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura04.mat using Guid(5fffb80392e0ded4a86fdf585dd4b1a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3aff4e1d60a3706cfbe36b211690383') in 0.016065 seconds 
+  Import took 0.019345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura03.mat
+  artifactKey: Guid(a2996aec2ad807e4fb2392e43f688415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura03.mat using Guid(a2996aec2ad807e4fb2392e43f688415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f80d4082fb51b1c2d7f5053154ec569f') in 0.014153 seconds 
+  Import took 0.017229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/aura_damage04.mat
+  artifactKey: Guid(69807f951242d824c9a0c3d3097324af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/aura_damage04.mat using Guid(69807f951242d824c9a0c3d3097324af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f32ff5d9981850fdab9c547c7a67317') in 0.013848 seconds 
+  Import took 0.017130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura06.mat
+  artifactKey: Guid(5a5ebf7bcf861fb4fbd54b40f5b09960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura06.mat using Guid(5a5ebf7bcf861fb4fbd54b40f5b09960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ec780a47804c9c380f39f4483d9d550') in 0.013819 seconds 
+  Import took 0.016815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Beams/arcanebeam.mat
+  artifactKey: Guid(6b27fba9c4dfa454caf8f3aa92c28a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Beams/arcanebeam.mat using Guid(6b27fba9c4dfa454caf8f3aa92c28a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2df8e381929b6c4049f8025043776f') in 0.014207 seconds 
+  Import took 0.017320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/aura_damage05.mat
+  artifactKey: Guid(5ecedb414e0291f45a63b9065683173e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/aura_damage05.mat using Guid(5ecedb414e0291f45a63b9065683173e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39dc438a58764d84a31980d77ae17a79') in 0.015070 seconds 
+  Import took 0.018460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura05.mat
+  artifactKey: Guid(41b1ecad8ea7c2a49bdf88edf74979b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura05.mat using Guid(41b1ecad8ea7c2a49bdf88edf74979b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18c3107ae9ff8ae090700ac0cc778147') in 0.014372 seconds 
+  Import took 0.018522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/aura_damage04(Dark).mat
+  artifactKey: Guid(a7f71f7d1bf0f2d43afbf05f4146fa41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/aura_damage04(Dark).mat using Guid(a7f71f7d1bf0f2d43afbf05f4146fa41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '003c92ca01f53b9ce3584bb2cc845d68') in 0.011125 seconds 
+  Import took 0.013898 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Missiles/Arcane/ArcaneGlow.mat
+  artifactKey: Guid(1ae55ae61d1144248b1cbd80a738177c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Missiles/Arcane/ArcaneGlow.mat using Guid(1ae55ae61d1144248b1cbd80a738177c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0613b53875196cc3b7249dcf25a8d4a8') in 0.010577 seconds 
+  Import took 0.014391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/AssetStore/Fantasy Armory/Set_Items2/origin/Materials/angelic_spear_d_f.mat
+  artifactKey: Guid(f145bc68fb8b27d479369ca4685ba430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Fantasy Armory/Set_Items2/origin/Materials/angelic_spear_d_f.mat using Guid(f145bc68fb8b27d479369ca4685ba430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19a20a479cae8117d8f4c93158e4381e') in 0.013258 seconds 
+  Import took 0.016279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Missiles/Trails/arcanetrail.mat
+  artifactKey: Guid(42f2ac475273c164688b930eee016f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Missiles/Trails/arcanetrail.mat using Guid(42f2ac475273c164688b930eee016f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a00362efe9334ebae569ad1d6d59a7') in 0.012046 seconds 
+  Import took 0.015361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura07.mat
+  artifactKey: Guid(41a972c72e0dd334b8924114e2ca3a86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura07.mat using Guid(41a972c72e0dd334b8924114e2ca3a86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '367480c5e308c28710003e94ab9b1e06') in 0.026708 seconds 
+  Import took 0.029812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura02.mat
+  artifactKey: Guid(27b2f7b5a9151e445a81af85c9f9632f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura02.mat using Guid(27b2f7b5a9151e445a81af85c9f9632f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aebfd86ce1c37edf322d19b0911c401') in 0.028714 seconds 
+  Import took 0.031724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/aura_damage02.mat
+  artifactKey: Guid(29170f38305c3ae42abfcdad807ba25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/aura_damage02.mat using Guid(29170f38305c3ae42abfcdad807ba25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91a2fcd0a1b60bcd66f92c046d5df721') in 0.014578 seconds 
+  Import took 0.017602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/aura_damage03.mat
+  artifactKey: Guid(317f8c03b4f342d428624f559bee19b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/aura_damage03.mat using Guid(317f8c03b4f342d428624f559bee19b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1d0b38a16228a9f35aee3b45bc8f222') in 0.013895 seconds 
+  Import took 0.017270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/aura_damage01.mat
+  artifactKey: Guid(4ec5ba8d0cca63d4ab2cc140ab6cf37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/aura_damage01.mat using Guid(4ec5ba8d0cca63d4ab2cc140ab6cf37d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1912b89d0c4879cddfbe001d0303f65e') in 0.014826 seconds 
+  Import took 0.017881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura08.mat
+  artifactKey: Guid(09209a21016093749ad60975ff898160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/Aura08.mat using Guid(09209a21016093749ad60975ff898160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ac6d5fc5285569ed10fa201bae1f3f9') in 0.015039 seconds 
+  Import took 0.018373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/aura11.mat
+  artifactKey: Guid(5bf2bb25623e8a346a256de323ccc27b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Materials/Aura/aura11.mat using Guid(5bf2bb25623e8a346a256de323ccc27b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c21cf8e7018fa21e5dbd036643c83d') in 0.015396 seconds 
+  Import took 0.018534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/AssetStore/Fantasy Armory/Set_Items2/origin/Materials/angelic_sword_d_f.mat
+  artifactKey: Guid(97d4ad4129d72af4c9347dcc3614d947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Fantasy Armory/Set_Items2/origin/Materials/angelic_sword_d_f.mat using Guid(97d4ad4129d72af4c9347dcc3614d947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6e617e0825b14418acf3bb2b6547f40') in 0.012242 seconds 
+  Import took 0.015995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.808509 seconds.
+  path: Assets/AssetStore/MagicArsenal/Demo/GUI/headerframe.png
+  artifactKey: Guid(91139e1d3d592824fbba2d2bcf48ad5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Demo/GUI/headerframe.png using Guid(91139e1d3d592824fbba2d2bcf48ad5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a43d61892a7e9459781cbd7ef283301') in 0.077381 seconds 
+  Import took 0.080396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/AssetStore/MagicArsenal/Demo/GUI/simplegui.png
+  artifactKey: Guid(3c429106c1b77d443a22ca9574cff669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Demo/GUI/simplegui.png using Guid(3c429106c1b77d443a22ca9574cff669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82559797d8d5a1a24780dbf8c15b0b28') in 0.047640 seconds 
+  Import took 0.050659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.556292 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Textures/magicslash_spritesheet.png
+  artifactKey: Guid(4b824615a41ccee4ca31dd020dc2f5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Textures/magicslash_spritesheet.png using Guid(4b824615a41ccee4ca31dd020dc2f5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010f5fe01c8b51a3e9d2ad1126ddd89e') in 0.028743 seconds 
+  Import took 0.031928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/AssetStore/Ruins_creation_kit/nmap_dirtyWood_01.png
+  artifactKey: Guid(427beaf8732822b46b2d5c39ef9fdb2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Ruins_creation_kit/nmap_dirtyWood_01.png using Guid(427beaf8732822b46b2d5c39ef9fdb2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a3a758b55a918f000412a3487be122f') in 0.011397 seconds 
+  Import took 0.014549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/AssetStore/Snow Mountain/Source/tga/mountain_Snow_000_Aldedo.tga
+  artifactKey: Guid(1505f88752c96b943896f32982a5c39a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Snow Mountain/Source/tga/mountain_Snow_000_Aldedo.tga using Guid(1505f88752c96b943896f32982a5c39a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '782237508576756f75da5c84e1d6d5fc') in 0.014449 seconds 
+  Import took 0.018027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/AssetStore/Ruins_creation_kit/nmap_smoothStone_01.png
+  artifactKey: Guid(d80afd5a83244f3448a03fd15b5b2180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Ruins_creation_kit/nmap_smoothStone_01.png using Guid(d80afd5a83244f3448a03fd15b5b2180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e844b9da87f42f468e1b302d531ec8ae') in 0.026225 seconds 
+  Import took 0.029462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/AssetStore/Ruins_creation_kit/nmap_floor_01.png
+  artifactKey: Guid(6427bf80db936eb4690273704796614e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Ruins_creation_kit/nmap_floor_01.png using Guid(6427bf80db936eb4690273704796614e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '569ebbf94be7157d100886f3704d274e') in 0.026887 seconds 
+  Import took 0.030289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/AssetStore/Ruins_creation_kit/nmap_woodRoof_01.png
+  artifactKey: Guid(182fc3e86717dc3438d0331dbed45c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Ruins_creation_kit/nmap_woodRoof_01.png using Guid(182fc3e86717dc3438d0331dbed45c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c083c20b7a512834ab23f7c73f766879') in 0.025959 seconds 
+  Import took 0.029804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Textures/modular_aura03dark.png
+  artifactKey: Guid(fc960e8df1c61de4394072e047492001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Textures/modular_aura03dark.png using Guid(fc960e8df1c61de4394072e047492001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d8dd8711102350a04576d65a41bd37e') in 0.024577 seconds 
+  Import took 0.027865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Textures/magicslash_spritesheet.png
+  artifactKey: Guid(4b824615a41ccee4ca31dd020dc2f5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Textures/magicslash_spritesheet.png using Guid(4b824615a41ccee4ca31dd020dc2f5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010f5fe01c8b51a3e9d2ad1126ddd89e') in 0.012876 seconds 
+  Import took 0.015538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Textures/modular_aura06.png
+  artifactKey: Guid(2dd400ab29834834cb5fa454e5b6b3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Textures/modular_aura06.png using Guid(2dd400ab29834834cb5fa454e5b6b3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc9d5ab3df4bd2689f699723673aca2c') in 0.014863 seconds 
+  Import took 0.017940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/AssetStore/Ruins_creation_kit/nmap_coupole_01.png
+  artifactKey: Guid(6f1e5a2e0b5ac514fb69aba6fa9572da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Ruins_creation_kit/nmap_coupole_01.png using Guid(6f1e5a2e0b5ac514fb69aba6fa9572da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b0b29b80535f59a410234d822b4c4f') in 0.011919 seconds 
+  Import took 0.014901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Textures/modular_aura05.png
+  artifactKey: Guid(237220bcbcad1dc4fa3851fc1b89c93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Textures/modular_aura05.png using Guid(237220bcbcad1dc4fa3851fc1b89c93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e5d610b9f7c70e36f503f9f776902a5') in 0.016164 seconds 
+  Import took 0.019304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Textures/modular_aura05_dark.png
+  artifactKey: Guid(d5fe7ed4fa6375e4885fde104471f099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Textures/modular_aura05_dark.png using Guid(d5fe7ed4fa6375e4885fde104471f099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b95fa2df1c5c8b2766c946df405a5089') in 0.019690 seconds 
+  Import took 0.023421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/AssetStore/Ruins_creation_kit/nmap_vitrail_02.png
+  artifactKey: Guid(799b9facfb21c584782af7dcfbbce389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Ruins_creation_kit/nmap_vitrail_02.png using Guid(799b9facfb21c584782af7dcfbbce389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e0712441f1824774910399f810448db') in 0.009193 seconds 
+  Import took 0.012447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/AssetStore/Ruins_creation_kit/nmap_oldWood_01.png
+  artifactKey: Guid(bec7c9c06741bf34e8166e7d888457d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Ruins_creation_kit/nmap_oldWood_01.png using Guid(bec7c9c06741bf34e8166e7d888457d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e55c832add202671c75ce091fd8f0a0c') in 0.010032 seconds 
+  Import took 0.013338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Textures/modular_aura07.png
+  artifactKey: Guid(31c49372cb9b26d43a5613ce3764849a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Textures/modular_aura07.png using Guid(31c49372cb9b26d43a5613ce3764849a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1809d33c55b34117a0096babec33d84') in 0.008619 seconds 
+  Import took 0.011968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/AssetStore/Ruins_creation_kit/nmap_vitrail_01.png
+  artifactKey: Guid(ad8190c9526f3c34d8525c55d6aa7648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Ruins_creation_kit/nmap_vitrail_01.png using Guid(ad8190c9526f3c34d8525c55d6aa7648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c1bd1fdf222d99ebdd8ee734effd3a0') in 0.013870 seconds 
+  Import took 0.016933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/AssetStore/Ruins_creation_kit/nmap_messBrick.png
+  artifactKey: Guid(ea8a0cfc5123d2e498793868f4762b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Ruins_creation_kit/nmap_messBrick.png using Guid(ea8a0cfc5123d2e498793868f4762b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68d5483b889b2f6883d2c4f27674ba8e') in 0.011242 seconds 
+  Import took 0.014420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/AssetStore/Snow Mountain/Source/tga/mountain_Snow_000_Normal.tga
+  artifactKey: Guid(60fb7bbfb523b15458f4bdc074bbf196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Snow Mountain/Source/tga/mountain_Snow_000_Normal.tga using Guid(60fb7bbfb523b15458f4bdc074bbf196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e936a73c357050c6aef0bfba5636b7ab') in 0.037343 seconds 
+  Import took 0.042762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/AssetStore/Ruins_creation_kit/nmap_smoothStone_02.png
+  artifactKey: Guid(23a84cd63fe34e74a815f2d4cae7117e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Ruins_creation_kit/nmap_smoothStone_02.png using Guid(23a84cd63fe34e74a815f2d4cae7117e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '991fbb21bf3f0ddb22560cb074c9b89a') in 0.009301 seconds 
+  Import took 0.012472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/FourEvilDragonsHP/Texture/DragonTerrorBringer/purpleHP.png
+  artifactKey: Guid(75239c16f6a0b7d4293cac07f14f0c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FourEvilDragonsHP/Texture/DragonTerrorBringer/purpleHP.png using Guid(75239c16f6a0b7d4293cac07f14f0c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d2aa285c762ffa93c97b90c33b46205') in 0.022728 seconds 
+  Import took 0.026380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Textures/modular_aura06_dark.png
+  artifactKey: Guid(66e15bfc8c1c08f4e873f8e8e7b6555c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Textures/modular_aura06_dark.png using Guid(66e15bfc8c1c08f4e873f8e8e7b6555c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f23a5594aee6baf8bb644585379e6886') in 0.011976 seconds 
+  Import took 0.015048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/AssetStore/Ruins_creation_kit/nmap_vitrail_03.png
+  artifactKey: Guid(931839b6e9e930e44bec43b4784614b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Ruins_creation_kit/nmap_vitrail_03.png using Guid(931839b6e9e930e44bec43b4784614b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50476efd18f804888c48873714ffc211') in 0.010797 seconds 
+  Import took 0.013909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/AssetStore/Ruins_creation_kit/nmap_wall_01.png
+  artifactKey: Guid(8fe5567e28e8be14583ad7bff570c1c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Ruins_creation_kit/nmap_wall_01.png using Guid(8fe5567e28e8be14583ad7bff570c1c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ced1bb5b284c5a3806a281db6b06ce2') in 0.014976 seconds 
+  Import took 0.018147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Textures/modular_aura04.png
+  artifactKey: Guid(cd739d733f2596240b3a2a579445c6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Textures/modular_aura04.png using Guid(cd739d733f2596240b3a2a579445c6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62429298750f8019f197b49647716cd8') in 0.012119 seconds 
+  Import took 0.015475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/AssetStore/Ruins_creation_kit/nmap_dirtyPlanks_02.png
+  artifactKey: Guid(cde50d80638d85d4684dc14df558e267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Ruins_creation_kit/nmap_dirtyPlanks_02.png using Guid(cde50d80638d85d4684dc14df558e267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb9001baf41c8724a0f8121e76d3cfba') in 0.010467 seconds 
+  Import took 0.013421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/AssetStore/Ruins_creation_kit/nmap_cutBricks.png
+  artifactKey: Guid(939770e6c94b042479c3da53cbe422d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Ruins_creation_kit/nmap_cutBricks.png using Guid(939770e6c94b042479c3da53cbe422d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bbcb74535031ac5213dbf51d134c22e') in 0.009047 seconds 
+  Import took 0.013199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000435 seconds.
+  path: Assets/AssetStore/Ruins_creation_kit/nmap_vitrail_04.png
+  artifactKey: Guid(77b0744f7f7c51643b4e701e4f47e962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Ruins_creation_kit/nmap_vitrail_04.png using Guid(77b0744f7f7c51643b4e701e4f47e962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6080f842411d90f956d16f19ee85c4f4') in 0.008665 seconds 
+  Import took 0.011800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/AssetStore/Ruins_creation_kit/nmap_metal_01.png
+  artifactKey: Guid(2d2b8d5b335527142b9bcc4ff5915710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Ruins_creation_kit/nmap_metal_01.png using Guid(2d2b8d5b335527142b9bcc4ff5915710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de617ff3198e5d2c86b8b191a6a70974') in 0.011681 seconds 
+  Import took 0.014755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Textures/modular_aura03.png
+  artifactKey: Guid(7f29dd3789e247d42b71f88ff4aff20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Textures/modular_aura03.png using Guid(7f29dd3789e247d42b71f88ff4aff20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '903ef78fa33a685d06af95ceb553a0e9') in 0.012958 seconds 
+  Import took 0.016056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1226.315039 seconds.
+  path: Assets/AssetStore/Fantasy Armory/origin/Textures/mace12_d.tga
+  artifactKey: Guid(24aa4502d66dad6458eb25de306caf60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Fantasy Armory/origin/Textures/mace12_d.tga using Guid(24aa4502d66dad6458eb25de306caf60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d5c0ff1adab0588248813a2df4bcce2') in 0.026649 seconds 
+  Import took 0.030217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Textures/magicslash_dark_spritesheet.png
+  artifactKey: Guid(6395b979e296e7a458d75320229a33ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Textures/magicslash_dark_spritesheet.png using Guid(6395b979e296e7a458d75320229a33ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '693e845362c6bdc6d4606dd4193b314c') in 0.085734 seconds 
+  Import took 0.088701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/AssetStore/Fantasy Armory/origin/Textures/mace15_d.tga
+  artifactKey: Guid(152e3eba6f6972d468c82d256a5e05ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Fantasy Armory/origin/Textures/mace15_d.tga using Guid(152e3eba6f6972d468c82d256a5e05ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca6f03525dfc08542be2a5bd3de703d0') in 0.053844 seconds 
+  Import took 0.057332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/AssetStore/Fantasy Armory/origin/Textures/mace14_d.tga
+  artifactKey: Guid(a5884af13253445468d50eb2381aee75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Fantasy Armory/origin/Textures/mace14_d.tga using Guid(a5884af13253445468d50eb2381aee75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba0f94739f83fac4bf04409068fbc956') in 0.027931 seconds 
+  Import took 0.030700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/AssetStore/Fantasy Armory/origin/Textures/mace13_d.tga
+  artifactKey: Guid(60fd05168c9909a4b972db9927c0754a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Fantasy Armory/origin/Textures/mace13_d.tga using Guid(60fd05168c9909a4b972db9927c0754a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e0549fd4b885ce7bbab02d8b85b095f') in 0.025806 seconds 
+  Import took 0.028823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Textures/magicslash_glow_spritesheet.png
+  artifactKey: Guid(61335d4325278ea4eb3f59c13a217fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Textures/magicslash_glow_spritesheet.png using Guid(61335d4325278ea4eb3f59c13a217fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fc418bafa1a302c246bb115e39c84f4') in 0.022741 seconds 
+  Import took 0.025867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/AssetStore/MagicArsenal/Effects/Textures/magicslash_afterglow_spritesheet.png
+  artifactKey: Guid(4cd8f33b7e7bcbd42ae5d5f8989f6331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/MagicArsenal/Effects/Textures/magicslash_afterglow_spritesheet.png using Guid(4cd8f33b7e7bcbd42ae5d5f8989f6331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8107c97e862ce2f7fd593ccf1e4f9858') in 0.021715 seconds 
+  Import took 0.024958 seconds .
+>>>>>>> main
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.007842 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -284,6 +867,24 @@ System memory in use after: 83.5 MB.
 
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2024.
 Total: 3.627200 ms (FindLiveObjects: 0.249500 ms CreateObjectMapping: 0.067600 ms MarkObjects: 3.248900 ms  DeleteObjects: 0.059100 ms)
+=======
+Registered in 0.007260 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.085 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1672 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.4 MB.
+System memory in use after: 91.5 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2210.
+Total: 2.348700 ms (FindLiveObjects: 0.178100 ms CreateObjectMapping: 0.086100 ms MarkObjects: 1.978200 ms  DeleteObjects: 0.105100 ms)
+>>>>>>> main
 
 AssetImportParameters requested are different than current active one (requested -> active):
   requireTextureImportCompression: false -> true
@@ -299,6 +900,7 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.007030 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -315,6 +917,24 @@ System memory in use after: 83.5 MB.
 
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2026.
 Total: 3.333000 ms (FindLiveObjects: 0.185100 ms CreateObjectMapping: 0.048600 ms MarkObjects: 3.019600 ms  DeleteObjects: 0.077800 ms)
+=======
+Registered in 0.006478 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.064 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1672 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.4 MB.
+System memory in use after: 91.5 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2212.
+Total: 2.188200 ms (FindLiveObjects: 0.177700 ms CreateObjectMapping: 0.091300 ms MarkObjects: 1.856000 ms  DeleteObjects: 0.062000 ms)
+>>>>>>> main
 
 AssetImportParameters requested are different than current active one (requested -> active):
   requireTextureImportCompression: false -> true
@@ -327,6 +947,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+<<<<<<< HEAD
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
@@ -2993,4 +3614,6 @@ Received Import Request.
 Start importing Assets/Scenes/HJ/Sample/face 1.fbx using Guid(165b93331f685954aa84f87ee977a28f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c9cb232e3f170ff34d50ceb4d8c56e3') in 0.065481 seconds 
   Import took 0.068385 seconds .
 
+=======
+>>>>>>> main
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
