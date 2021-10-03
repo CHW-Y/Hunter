@@ -30,17 +30,10 @@ public class PlayerAnimation : MonoBehaviour
         am.SetFloat("MoveAni", aniValue);
 
         //  플레이어 공격 애니메이션 경직 테스트용
-<<<<<<< HEAD
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            StopPlayerAni(0.1f);
-        }
-=======
         //if (Input.GetKeyDown(KeyCode.L))
         //{
         //    StopPlayerAni(0.1f);
         //}
->>>>>>> main
         
         if (am.GetCurrentAnimatorStateInfo(2).IsName("SwingReady"))
         {

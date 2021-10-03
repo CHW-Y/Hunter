@@ -139,24 +139,8 @@ public class PlayerAttack : MonoBehaviour
     //  애니메이션 이벤트용 함수
     void WeaponColBool(float value)
     {
-<<<<<<< HEAD
-=======
         weaponCol.ColBoxChange();        
->>>>>>> main
         weaponCol.SetAttackValue(value, pm.attackPower);
-        weaponCol.ColBoxChange();        
-    }
-
-    void PlaySwingSound()
-    {
-        if (GameManager.gm.am.am.GetCurrentAnimatorStateInfo(2).IsTag("Attack1"))
-        {
-            GameManager.gm.soundM.PlayEffectSound("hammerswing_op1", 0.6f);
-        }
-        else if (GameManager.gm.am.am.GetCurrentAnimatorStateInfo(2).IsTag("Attack2"))
-        {
-            GameManager.gm.soundM.PlayEffectSound("hammerswing_op2", 0.7f);
-        }
     }
 
     void PlaySwingSound()

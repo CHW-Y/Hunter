@@ -44,11 +44,7 @@ public class WeaponColCheck : MonoBehaviour
             resultAttackValue = Mathf.Round(Random.Range(resultAttackValue - 5.0f, resultAttackValue + 5.0f) * 10f) * 0.1f; // 최종 데미지 계산2
 
             //  한 공격 패턴중 공격에 맞은 상태 리스트에 있는지 체크
-<<<<<<< HEAD
-            if (!currentAttackEnemyList.Contains(other.transform.root.name) && resultAttackValue != 0)
-=======
             if (!currentAttackEnemyList.Contains(other.transform.root.name) && resultAttackValue > 5f)
->>>>>>> main
             {                
                 currentAttackEnemyList.Add(other.transform.root.name); //  실행중인 공격 패턴에 맞으면 리스트 추가                
                 Vector3 contactPos = other.gameObject.GetComponent<Collider>().ClosestPointOnBounds(transform.position); //  공격이 맞은 위치
@@ -59,44 +55,27 @@ public class WeaponColCheck : MonoBehaviour
 
                 GameManager.gm.am.StopPlayerAni(0.125f); //  공격에 성공시 애니메이션 경직 효과
 
-<<<<<<< HEAD
-                //  공격이 맞은 부위가 머리부분이면..
-                if (other.tag.Equals("Head"))
-                {
-=======
                 
 
                 //  공격이 맞은 부위가 머리부분이면..
                 if (other.tag.Equals("Head"))
                 {
                     other.transform.root.GetComponent<BossFSM>().currentHP -= (int)(resultAttackValue * 1.5f); //  보스 체력에 데미지 적용
->>>>>>> main
                     GameManager.gm.um.SpawnDamageText(contactPos , resultAttackValue *1.5f); // 데미지 UI 출력
                     GameManager.gm.cm.CameraShake(0.2f + attackTypePower * 0.01f, attackTypePower * 0.22f); //  카메라 쉐이크 함수 실행
                     GameManager.gm.particleM.ActiveHitParticle(contactPos, ParticleManager.HitParticle.Hit_Type1);  //  파티클 함수 실행
                     GameManager.gm.soundM.PlayEffectSound("hammer_hit4", 1f);   //  공격 사운드 함수 실행1
                     GameManager.gm.soundM.PlayEffectSound("headstunattack1", 1f);   //  공격 사운드 함수 실행2
-<<<<<<< HEAD
-                }
-                else
-                {
-=======
                                                                                     
                 }
                 else
                 {
                     other.transform.root.GetComponent<BossFSM>().currentHP -= (int)resultAttackValue;
->>>>>>> main
                     GameManager.gm.um.SpawnDamageText(contactPos, resultAttackValue);
                     GameManager.gm.cm.CameraShake(0.15f + attackTypePower * 0.01f, attackTypePower * 0.15f);
                     GameManager.gm.particleM.ActiveHitParticle(contactPos, ParticleManager.HitParticle.Hit_Type2);
                     GameManager.gm.soundM.PlayEffectSound("hammer_hit4", 1f);
-<<<<<<< HEAD
-                }                
-                //공격함수 넣어야됨
-=======
                 }
->>>>>>> main
 
                 print("보스 체력: " + other.transform.root.GetComponent<BossFSM>().currentHP);
                 //other.gameObject.GetComponent<Collider>().ClosestPointOnBounds(transform.position);                
@@ -131,11 +110,7 @@ public class WeaponColCheck : MonoBehaviour
     }
 
     /// <summary>
-<<<<<<< HEAD
-    /// 플레이어의 공격력과 공격 패턴의 공격력 가중치를 전달하는 함수
-=======
     /// 플레이어의 공격력과 공격 패턴의 공격력 가중치를 설정하는 함수
->>>>>>> main
     /// </summary>
     /// <param name="patternPower">공격 패턴 가중치</param>
     /// <param name="playerPower">플레이어 공격력</param>
