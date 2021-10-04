@@ -14,6 +14,10 @@ public class SoundManager : MonoBehaviour
     [Tooltip("백그라운드 사운드용 Audio Source 컴포넌트")]
     public AudioSource backgroundAudioPlayer;
 
+    [Tooltip("전투 사운드용 Audio Source 컴포넌트")]
+    public AudioSource battleBGMPlayer;
+    bool isBattle;
+
     [ReadOnly]
     [Tooltip("현재 읽어온 효과음들의 Key값")]
     public List<string> keyList = new List<string>();
@@ -70,6 +74,19 @@ public class SoundManager : MonoBehaviour
         else
         {
             print("해당 키값의 사운드 없음");
+        }
+    }
+
+    /// <summary>
+    /// 전투가 개시될 때 SoundManager에서 전투 BGM을 실행시키는 함수
+    /// </summary>
+    public void BattleOn()
+    {
+        if (!isBattle)
+        {
+            backgroundAudioPlayer.volume = 0.2f;
+            battleBGMPlayer.Play();
+            isBattle = true;
         }
     }
 }

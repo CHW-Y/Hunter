@@ -10,7 +10,7 @@ public class PlayerStats : MonoBehaviour
     [Tooltip("플레이어 체력 Max수치")]
     public int maxHP = 100;
     //  현재 체력
-    [SerializeField]int hp;    
+    [ReadOnly][SerializeField]int hp;    
 
     //  플레이어 스태미너 관련 변수
     [Tooltip("플레이어 스태미너 Max수치")]

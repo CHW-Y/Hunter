@@ -21,8 +21,7 @@ public class IntroScene : MonoBehaviour
     float time;
     
     void Start()
-    {
-
+    {        
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         //  Ä³½Ì
