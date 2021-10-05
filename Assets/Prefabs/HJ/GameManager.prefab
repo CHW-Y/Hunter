@@ -43,7 +43,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ad3e077dfe22f404cb1964abcc362574, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -509,6 +509,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageText: {fileID: 4003511783155463689, guid: e5711d1f96e4a924ba5cbed69635c96f, type: 3}
   canvas: {fileID: 0}
+  playerUI: {fileID: 0}
+  hpBar: {fileID: 0}
+  mpBar: {fileID: 0}
 --- !u!114 &1736299274
 MonoBehaviour:
   m_ObjectHideFlags: 0

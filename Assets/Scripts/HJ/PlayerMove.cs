@@ -34,6 +34,7 @@ public class PlayerMove : PlayerStats
 
     void Update()
     {
+        GameManager.gm.um.SetPlayerHPMP(hp / maxHP, mp / maxMP);    // 현재 hp/mp 수치를 실시간으로 ui에 적용
         //  WASD 조작
         move = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));        
 

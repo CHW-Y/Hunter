@@ -26,7 +26,7 @@ public class CameraMove : MonoBehaviour
     Coroutine lookOnCor;
 
     void Start()
-    {
+    {        
         targetTransform = targetTransform == null ? GameObject.Find("Player").transform : targetTransform;
         pos = targetTransform.position;
         originPos = new GameObject();
