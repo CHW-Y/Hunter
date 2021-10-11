@@ -145,7 +145,7 @@ public class BossFSM : MonoBehaviour
         // 공격할 때 basicAttackTrigger 키기
         basicAttackTrigger.enabled = true; 
 
-        delayTime = AnimationTime(BossState.BasicAttack);
+        delayTime = AnimationTime(BossState.BasicAttack) + 1.5f;
         currentTime += Time.deltaTime;
 
         if (currentTime >= delayTime)

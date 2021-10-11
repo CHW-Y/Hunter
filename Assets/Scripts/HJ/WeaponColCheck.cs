@@ -45,7 +45,8 @@ public class WeaponColCheck : MonoBehaviour
 
             //  한 공격 패턴중 공격에 맞은 상태 리스트에 있는지 체크
             if (!currentAttackEnemyList.Contains(other.transform.root.name) && resultAttackValue > 5f)
-            {                
+            {
+                GameManager.gm.soundM.BattleOn(); //    최초 전투 BGM 실행
                 currentAttackEnemyList.Add(other.transform.root.name); //  실행중인 공격 패턴에 맞으면 리스트 추가                
                 Vector3 contactPos = other.gameObject.GetComponent<Collider>().ClosestPointOnBounds(transform.position); //  공격이 맞은 위치
                 print("어택!");
@@ -54,7 +55,7 @@ public class WeaponColCheck : MonoBehaviour
                 //go.name = "HitPoint";
 
                 GameManager.gm.am.StopPlayerAni(0.125f); //  공격에 성공시 애니메이션 경직 효과
-
+                
                 
 
                 //  공격이 맞은 부위가 머리부분이면..

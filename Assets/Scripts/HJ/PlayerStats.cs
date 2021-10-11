@@ -8,15 +8,15 @@ public class PlayerStats : MonoBehaviour
 {
     //  플레이어 체력 관련 변수
     [Tooltip("플레이어 체력 Max수치")]
-    public int maxHP = 100;
+    public float maxHP = 100;
     //  현재 체력
-    [SerializeField]int hp;    
+    [ReadOnly][SerializeField]protected float hp;    
 
     //  플레이어 스태미너 관련 변수
     [Tooltip("플레이어 스태미너 Max수치")]
-    public int maxMP = 100;
+    public float maxMP = 100;
     //  현재 스태미나
-    int mp;
+    protected float mp;
 
     //  플레이어 이동속도 관련 변수
     [Tooltip("플레이어 기본 이동속도 수치")]
@@ -55,13 +55,13 @@ public class PlayerStats : MonoBehaviour
     {
         hp = maxHP;
         mp = maxMP;
-    }
+    }    
 
     /// <summary>
     /// 플레이어의 현재 HP값을 가져오는 함수
     /// </summary>
     /// <returns></returns>
-    public int GetCurrentHP()
+    public float GetCurrentHP()
     {
         return hp;
     }
@@ -70,7 +70,7 @@ public class PlayerStats : MonoBehaviour
     /// 플레이어의 현재 MP값을 가져오는 함수
     /// </summary>
     /// <returns></returns>
-    public int GetCurrentMP()
+    public float GetCurrentMP()
     {
         return mp;
     }
