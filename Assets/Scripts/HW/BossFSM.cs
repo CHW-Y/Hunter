@@ -17,18 +17,21 @@ public class BossFSM : MonoBehaviour
     }
 
     public Transform target;
+    public BoxCollider basicAttackTrigger;
+    public GameObject fire;
+    public Transform firePos;
     public float moveSpeed = 5.0f;
     public float attackRange = 7.0f;
-    public BoxCollider basicAttackTrigger;
     public BossState bossState = BossState.Sleep;
+    
 
     public int maxHP = 1000;
     public int currentHP = 0;
     public int attackDamage = 5;
+    public float rotSpeed = 1;
 
     NavMeshAgent agent;
     Animator anim;
-    Vector3 targetPos;
     RuntimeAnimatorController ac;
     float currentTime = 0;
     float delayTime = 0;
@@ -118,10 +121,12 @@ public class BossFSM : MonoBehaviour
         agent.SetDestination(target.position);
 
         agent.speed = moveSpeed;
-        targetPos = new Vector3(target.position.x, transform.position.y, target.position.z);
+        Vector3 dir = target.position - transform.position;
 
         // 항상 타켓을 바라보게 설정한다.
-        transform.LookAt(targetPos);
+        //transform.LookAt(targetPos);
+        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(dir), rotSpeed * Time.deltaTime);
+
 
         // 공격 사거리 안에 들어오면 랜덤으로 공격한다.
         if (Vector3.Distance(target.position, transform.position) < attackRange)
@@ -166,6 +171,7 @@ public class BossFSM : MonoBehaviour
         delayTime = AnimationTime(BossState.FlameAttack);
         currentTime += Time.deltaTime;
 
+
         if (currentTime >= delayTime)
         {
             currentTime = 0;
@@ -194,6 +200,8 @@ public class BossFSM : MonoBehaviour
 
                 // 공격 애니메이션 실행
                 anim.SetTrigger("FlameAttack");
+
+                Instantiate(fire, firePos.position, Quaternion.Euler(new Vector3(90, 0, 0)));
                 break;
             default:
                 break;
