@@ -1,0 +1,741 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.12f1 (b3b2c6512326) revision 11776710'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1237; Version 2009; 64bit' Language: 'ko' Physical Memory: 16310 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Unity\2020.3.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/GitHub/Hunter
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+6399
+Successfully changed project path to: D:/GitHub/Hunter
+D:/GitHub/Hunter
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 48.20 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.12f1 (b3b2c6512326)
+[Subsystems] Discovering subsystems at path D:/Unity/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/GitHub/Hunter/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Vendor:   
+    VRAM:     2988 MB
+    Driver:   27.21.14.6109
+Initialize mono
+Mono path[0] = 'D:/Unity/2020.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56780
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000823 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 50.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.212 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002391 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.895 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1709 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.7 MB.
+System memory in use after: 86.7 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2151.
+Total: 1.983200 ms (FindLiveObjects: 0.212500 ms CreateObjectMapping: 0.085000 ms MarkObjects: 1.607900 ms  DeleteObjects: 0.076700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Dragon
+  artifactKey: Guid(15a3805d9a1365c49aa111f388432415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon using Guid(15a3805d9a1365c49aa111f388432415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ead3dcb5165199f826becab4c31fd4ce') in 0.003030 seconds 
+  Import took 0.015425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.837830 seconds.
+  path: Assets/Dragon/SK_MOUNTAIN_DRAGON.FBX
+  artifactKey: Guid(486bc213862d4d840b039017b1673a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/SK_MOUNTAIN_DRAGON.FBX using Guid(486bc213862d4d840b039017b1673a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47b6d0aa4de905513c52b021da64c350') in 0.269489 seconds 
+  Import took 0.288665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.631832 seconds.
+  path: Assets/Scenes/HW.unity
+  artifactKey: Guid(672310565fed483429580c536a34fb29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/HW.unity using Guid(672310565fed483429580c536a34fb29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf3d702d5a7c82a6e0ec5289889f8cdf') in 0.010255 seconds 
+  Import took 0.013336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001374 seconds.
+  path: Assets/Scenes/HW.unity
+  artifactKey: Guid(672310565fed483429580c536a34fb29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/HW.unity using Guid(672310565fed483429580c536a34fb29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf3d702d5a7c82a6e0ec5289889f8cdf') in 0.001538 seconds 
+  Import took 0.004268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.903517 seconds.
+  path: Assets/Dragon/SK_MOUNTAIN_DRAGON.prefab
+  artifactKey: Guid(4fe701b5692e77f45b6e154f8b134b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/SK_MOUNTAIN_DRAGON.prefab using Guid(4fe701b5692e77f45b6e154f8b134b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17493fda59e6ba9f52d14cca70c5b131') in 0.120056 seconds 
+  Import took 0.142597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.068906 seconds.
+  path: Assets/Dragon/SK_MOUNTAIN_DRAGON 1.prefab
+  artifactKey: Guid(4c2331708408e86439cfc21adf4b14e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/SK_MOUNTAIN_DRAGON 1.prefab using Guid(4c2331708408e86439cfc21adf4b14e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed34554cf4089add08d49fff12b45e71') in 0.093653 seconds 
+  Import took 0.109748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.607887 seconds.
+  path: Assets/Prefabs/SK_MOUNTAIN_DRAGON 1.prefab
+  artifactKey: Guid(4c2331708408e86439cfc21adf4b14e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SK_MOUNTAIN_DRAGON 1.prefab using Guid(4c2331708408e86439cfc21adf4b14e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29c153dddead3f6bb8b8aa4ec6606ee5') in 0.092936 seconds 
+  Import took 0.107889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.398819 seconds.
+  path: Assets/Prefabs/HJ
+  artifactKey: Guid(13ff12a533556fa42847bef14b307d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HJ using Guid(13ff12a533556fa42847bef14b307d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12dd83d8dd44a3aab8088eb6c2c9f242') in 0.004401 seconds 
+  Import took 0.007306 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.329298 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(6067909c623ba374daac2452b6f95149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(6067909c623ba374daac2452b6f95149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c49d60fd418a2b689ff3d03d0ebaad2') in 0.004736 seconds 
+  Import took 0.012023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002090 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(6067909c623ba374daac2452b6f95149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(6067909c623ba374daac2452b6f95149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c49d60fd418a2b689ff3d03d0ebaad2') in 0.001108 seconds 
+  Import took 0.003453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.346336 seconds.
+  path: Assets/Prefabs/HJ/Sphere.prefab
+  artifactKey: Guid(3735ac7dca12eae4e95ac160a064b77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HJ/Sphere.prefab using Guid(3735ac7dca12eae4e95ac160a064b77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f015d54a8c330c9108b697d8cb80ca26') in 0.008461 seconds 
+  Import took 0.011461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.257728 seconds.
+  path: Assets/Prefabs/HJ/Sphere.prefab
+  artifactKey: Guid(3735ac7dca12eae4e95ac160a064b77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HJ/Sphere.prefab using Guid(3735ac7dca12eae4e95ac160a064b77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f015d54a8c330c9108b697d8cb80ca26') in 0.004258 seconds 
+  Import took 0.006765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.391396 seconds.
+  path: Assets/Prefabs/SK_MOUNTAIN_DRAGON.prefab
+  artifactKey: Guid(4c2331708408e86439cfc21adf4b14e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SK_MOUNTAIN_DRAGON.prefab using Guid(4c2331708408e86439cfc21adf4b14e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ebd605ab8e0319e56dcb22c11d4d886') in 0.087854 seconds 
+  Import took 0.105482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.762638 seconds.
+  path: Assets/Animations/Boss
+  artifactKey: Guid(4f213d2a2f5b32e45a7b294e3c3228d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Boss using Guid(4f213d2a2f5b32e45a7b294e3c3228d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e386de9be6b12db800cb7918e30a2075') in 0.009900 seconds 
+  Import took 0.018383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.026773 seconds.
+  path: Assets/Animations/Boss/DragonAnimator.controller
+  artifactKey: Guid(bcb132ff00384f14c9b04e1f4f5455d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Boss/DragonAnimator.controller using Guid(bcb132ff00384f14c9b04e1f4f5455d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88068d2fe8b47e6d73b51445f3eb66b6') in 0.002821 seconds 
+  Import took 0.016525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.835523 seconds.
+  path: Assets/Dragon/ANIM
+  artifactKey: Guid(561c4402bd5f5c445a3bf8b395b6a899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM using Guid(561c4402bd5f5c445a3bf8b395b6a899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cffbf8cceeeda80334d9bbf87c1870a') in 0.001195 seconds 
+  Import took 0.004471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.004194 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_bite.fbx
+  artifactKey: Guid(c900930b6ed52ea49904c17153fecf6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_bite.fbx using Guid(c900930b6ed52ea49904c17153fecf6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a04bef1322dda3b1d57f44cf2c6058') in 0.007177 seconds 
+  Import took 0.010873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.257335 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_ClawsAttack2HitComboForward.fbx
+  artifactKey: Guid(6e0eed40312737f489da18f7e4b626a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_ClawsAttack2HitComboForward.fbx using Guid(6e0eed40312737f489da18f7e4b626a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d220a70dea3f113f69010f7923a6921') in 0.006368 seconds 
+  Import took 0.020689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000909 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_ClawsAttack2HitComboForward.fbx
+  artifactKey: Guid(6e0eed40312737f489da18f7e4b626a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_ClawsAttack2HitComboForward.fbx using Guid(6e0eed40312737f489da18f7e4b626a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d220a70dea3f113f69010f7923a6921') in 0.006123 seconds 
+  Import took 0.009246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.267026 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_ClawsAttack2HitComboForward_RM.fbx
+  artifactKey: Guid(b1f54c856f457304c8f3416be7a86db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_ClawsAttack2HitComboForward_RM.fbx using Guid(b1f54c856f457304c8f3416be7a86db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80d7b0e5a446c18524570a567381dc59') in 0.014208 seconds 
+  Import took 0.023523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.216908 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_deathHitTheGround.fbx
+  artifactKey: Guid(062217713b41eb2498ea2589c12e0e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_deathHitTheGround.fbx using Guid(062217713b41eb2498ea2589c12e0e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06406eb75295977508ac0af6749349da') in 0.005221 seconds 
+  Import took 0.012567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.246686 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_falling.fbx
+  artifactKey: Guid(4bb964ccb8c938c4182489fb96c521cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_falling.fbx using Guid(4bb964ccb8c938c4182489fb96c521cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaa52a79e207141dfc627b7f2deef784') in 0.005135 seconds 
+  Import took 0.018047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.349015 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_flyNormal.fbx
+  artifactKey: Guid(af64b856cd4ce1048b44ccddb1eb826e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_flyNormal.fbx using Guid(af64b856cd4ce1048b44ccddb1eb826e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feceb50e42f5ed5ef1cbf31d799b01f2') in 0.005248 seconds 
+  Import took 0.012918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.266604 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_FlyStationary.fbx
+  artifactKey: Guid(dc61932f2153ac94daac262ee32d2e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_FlyStationary.fbx using Guid(dc61932f2153ac94daac262ee32d2e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a26fc1c9e34ea4462618646f2b9a7824') in 0.008477 seconds 
+  Import took 0.012024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.844170 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_getHitFront.fbx
+  artifactKey: Guid(17028e17e93c28a4fab4ca9e034b6a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_getHitFront.fbx using Guid(17028e17e93c28a4fab4ca9e034b6a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f08263db2725cdca172b79f0514b17f2') in 0.007736 seconds 
+  Import took 0.010568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.391584 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_getHitRight.fbx
+  artifactKey: Guid(48b30b78e272c0a43b0d9f9c9603eb46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_getHitRight.fbx using Guid(48b30b78e272c0a43b0d9f9c9603eb46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d042eddffdaf036854785ecefe4f914') in 0.007697 seconds 
+  Import took 0.011438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.608830 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_idleLookAround.fbx
+  artifactKey: Guid(3ca87a4d2d27fe24284d40194540d79f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_idleLookAround.fbx using Guid(3ca87a4d2d27fe24284d40194540d79f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca411bbddcc02e5420ceeb030d6dab6d') in 0.006666 seconds 
+  Import took 0.018303 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.710539 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_idleBreathe.fbx
+  artifactKey: Guid(ce88800e4c782e04cb921ab086b00b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_idleBreathe.fbx using Guid(ce88800e4c782e04cb921ab086b00b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06ca8ba9b01a2f06587006f5f85f6c2') in 0.005066 seconds 
+  Import took 0.020565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.349168 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_takeOffToFlyStationary.fbx
+  artifactKey: Guid(0032699d6c055124db88a43519c73096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_takeOffToFlyStationary.fbx using Guid(0032699d6c055124db88a43519c73096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c9682ac022715055e5860d22005e103') in 0.015184 seconds 
+  Import took 0.029303 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.804470 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_takeOffToGlide.fbx
+  artifactKey: Guid(011dcfe1413bb4449bc781ea9675dea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_takeOffToGlide.fbx using Guid(011dcfe1413bb4449bc781ea9675dea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e95998fcc829585769a6b49018d95dd9') in 0.008985 seconds 
+  Import took 0.022676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.447200 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_takeOffToGlide_RM.fbx
+  artifactKey: Guid(fb28d4adf5b6276479890762ec96a25c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_takeOffToGlide_RM.fbx using Guid(fb28d4adf5b6276479890762ec96a25c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c34a2a05f62ba4836509962bc934059') in 0.005783 seconds 
+  Import took 0.016550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.404499 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_turn90Left.fbx
+  artifactKey: Guid(b15c728195d30f2479484477740c828c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_turn90Left.fbx using Guid(b15c728195d30f2479484477740c828c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb80e6403c441ffcf8960ff5b4bfe5f5') in 0.005867 seconds 
+  Import took 0.009681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.842114 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_takeOffToFlyStationary_RM.fbx
+  artifactKey: Guid(98f7ffcd55956864e8d432c10e003208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_takeOffToFlyStationary_RM.fbx using Guid(98f7ffcd55956864e8d432c10e003208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7622f7ab8bc6eaa44a015bdbdd44025') in 0.006399 seconds 
+  Import took 0.015773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001247 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_takeOffToFlyStationary_RM.fbx
+  artifactKey: Guid(98f7ffcd55956864e8d432c10e003208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_takeOffToFlyStationary_RM.fbx using Guid(98f7ffcd55956864e8d432c10e003208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7622f7ab8bc6eaa44a015bdbdd44025') in 0.006374 seconds 
+  Import took 0.009280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.438349 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_walk.fbx
+  artifactKey: Guid(b507a979cc899dc4bacb1ce3e443ce22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_walk.fbx using Guid(b507a979cc899dc4bacb1ce3e443ce22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f96c095a67bcefcc347d61bb222a287a') in 0.006199 seconds 
+  Import took 0.020711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.170748 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_death.fbx
+  artifactKey: Guid(97975140707af2649b192f84bbb5947f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_death.fbx using Guid(97975140707af2649b192f84bbb5947f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b51930f6a7dd906ddf6be0e1acb45dc') in 0.009802 seconds 
+  Import took 0.025030 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002312 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.817 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1673 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.4 MB.
+System memory in use after: 101.5 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2165.
+Total: 1.888000 ms (FindLiveObjects: 0.197500 ms CreateObjectMapping: 0.068600 ms MarkObjects: 1.565400 ms  DeleteObjects: 0.055500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 80.232787 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_getHitLeft.fbx
+  artifactKey: Guid(53fb8abb924a353448537bbdc23ce7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_getHitLeft.fbx using Guid(53fb8abb924a353448537bbdc23ce7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da71dfca6ae49d3cd579a4fff8f5fcc4') in 0.039532 seconds 
+  Import took 0.042531 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002506 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.889 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1673 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.4 MB.
+System memory in use after: 101.5 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2167.
+Total: 1.694100 ms (FindLiveObjects: 0.153000 ms CreateObjectMapping: 0.050100 ms MarkObjects: 1.444400 ms  DeleteObjects: 0.045800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 50.424147 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_run.fbx
+  artifactKey: Guid(84b3b6f546a9a2943a2ad8f1e4d90548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_run.fbx using Guid(84b3b6f546a9a2943a2ad8f1e4d90548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91c706e80d960675198b4aa38e0a6d1e') in 0.033594 seconds 
+  Import took 0.047313 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002524 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.820 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1673 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.5 MB.
+System memory in use after: 101.5 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2169.
+Total: 2.235300 ms (FindLiveObjects: 0.181300 ms CreateObjectMapping: 0.062700 ms MarkObjects: 1.918100 ms  DeleteObjects: 0.072300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 16.202430 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_run.fbx
+  artifactKey: Guid(84b3b6f546a9a2943a2ad8f1e4d90548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_run.fbx using Guid(84b3b6f546a9a2943a2ad8f1e4d90548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dedd28ee148b625390845f46c55f0b3e') in 0.028444 seconds 
+  Import took 0.045557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.342343 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_run_RM.fbx
+  artifactKey: Guid(496e856c72ca23548a59b9083093b4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_run_RM.fbx using Guid(496e856c72ca23548a59b9083093b4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70120432e7d8dfb9138b9be8c7899c9c') in 0.005356 seconds 
+  Import took 0.008091 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002663 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.813 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1673 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.5 MB.
+System memory in use after: 101.6 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2171.
+Total: 1.691500 ms (FindLiveObjects: 0.136700 ms CreateObjectMapping: 0.047100 ms MarkObjects: 1.458300 ms  DeleteObjects: 0.048500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4.628598 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_run_RM.fbx
+  artifactKey: Guid(496e856c72ca23548a59b9083093b4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_run_RM.fbx using Guid(496e856c72ca23548a59b9083093b4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '601e520aee9c2282277d53a01784a29e') in 0.028687 seconds 
+  Import took 0.031888 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002460 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.811 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1673 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.5 MB.
+System memory in use after: 101.6 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2173.
+Total: 1.730600 ms (FindLiveObjects: 0.134700 ms CreateObjectMapping: 0.045800 ms MarkObjects: 1.502400 ms  DeleteObjects: 0.046900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 249.521583 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_walk.fbx
+  artifactKey: Guid(b507a979cc899dc4bacb1ce3e443ce22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_walk.fbx using Guid(b507a979cc899dc4bacb1ce3e443ce22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1cdf206f58d62b072ddc470b95e8000') in 0.032169 seconds 
+  Import took 0.048342 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002388 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.830 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1673 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.5 MB.
+System memory in use after: 101.6 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2175.
+Total: 1.932000 ms (FindLiveObjects: 0.191500 ms CreateObjectMapping: 0.062700 ms MarkObjects: 1.619800 ms  DeleteObjects: 0.057100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 142.005240 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_idleBreathe.fbx
+  artifactKey: Guid(ce88800e4c782e04cb921ab086b00b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_idleBreathe.fbx using Guid(ce88800e4c782e04cb921ab086b00b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14f0c4269820910c5b821ddccf186fac') in 0.029046 seconds 
+  Import took 0.043013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.350277 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_idleLookAround.fbx
+  artifactKey: Guid(3ca87a4d2d27fe24284d40194540d79f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_idleLookAround.fbx using Guid(3ca87a4d2d27fe24284d40194540d79f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e30c84e056887cd52ca65be7ab9d547') in 0.006756 seconds 
+  Import took 0.013196 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002381 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.876 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1673 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.5 MB.
+System memory in use after: 101.6 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2177.
+Total: 1.756100 ms (FindLiveObjects: 0.149300 ms CreateObjectMapping: 0.047200 ms MarkObjects: 1.512000 ms  DeleteObjects: 0.047000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002326 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.827 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.25 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1673 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.5 MB.
+System memory in use after: 101.6 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2179.
+Total: 1.830500 ms (FindLiveObjects: 0.164100 ms CreateObjectMapping: 0.063300 ms MarkObjects: 1.548300 ms  DeleteObjects: 0.053800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002684 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.843 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1673 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.5 MB.
+System memory in use after: 101.6 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2181.
+Total: 1.838500 ms (FindLiveObjects: 0.184400 ms CreateObjectMapping: 0.054900 ms MarkObjects: 1.538500 ms  DeleteObjects: 0.059500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2888.533794 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_flyNormalGetHit.fbx
+  artifactKey: Guid(c54466df35c053d41bdee48c6c689f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_flyNormalGetHit.fbx using Guid(c54466df35c053d41bdee48c6c689f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1782f417425f60b22f3cadaa342fc25b') in 0.073854 seconds 
+  Import took 0.088724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.498296 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_flyNormalToFall.fbx
+  artifactKey: Guid(0e1890871b3441647a73eabf349d0eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_flyNormalToFall.fbx using Guid(0e1890871b3441647a73eabf349d0eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74ed25ed40715e20d1ea4774fd8074e1') in 0.005333 seconds 
+  Import took 0.013484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.192780 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_spreadFire.fbx
+  artifactKey: Guid(f913382402ee3c849bcbc9d14b7e4c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_spreadFire.fbx using Guid(f913382402ee3c849bcbc9d14b7e4c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa0387df64eb39794a89888092b0a50') in 0.010352 seconds 
+  Import took 0.022264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000677 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_spreadFire.fbx
+  artifactKey: Guid(f913382402ee3c849bcbc9d14b7e4c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_spreadFire.fbx using Guid(f913382402ee3c849bcbc9d14b7e4c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa0387df64eb39794a89888092b0a50') in 0.005656 seconds 
+  Import took 0.008466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.683837 seconds.
+  path: Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_spitFireBall.fbx
+  artifactKey: Guid(c94920e64aafbe343be09e9f2f598e23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dragon/ANIM/ANIM_MOUNTAIN_DRAGON_spitFireBall.fbx using Guid(c94920e64aafbe343be09e9f2f598e23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3dd94d64b34009649da00785807cc83') in 0.005777 seconds 
+  Import took 0.012221 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

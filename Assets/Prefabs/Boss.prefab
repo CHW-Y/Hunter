@@ -685,13 +685,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  basicAttackTrigger: {fileID: 172680799}
+  fire: {fileID: 100002, guid: 55c2fe57e8524aa41aaaba0f1d2631d1, type: 3}
+  firePos: {fileID: 2740483952920335339}
   moveSpeed: 5
   attackRange: 7
-  basicAttackTrigger: {fileID: 172680799}
   bossState: 0
-  maxHP: 50
+  maxHP: 1000
   currentHP: 0
   attackDamage: 5
+  rotSpeed: 1
 --- !u!195 &-5647130539520392156
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2936,7 +2939,8 @@ Transform:
   m_LocalRotation: {x: 0.03281538, y: -0.7063441, z: 0.032815304, w: 0.70634574}
   m_LocalPosition: {x: -77.64709, y: 1.3642421e-13, z: 2.6399108e-14}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2740483952920335339}
   m_Father: {fileID: 430196}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4179,7 +4183,7 @@ BoxCollider:
   m_GameObject: {fileID: 197984}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 200, y: 100, z: 50}
   m_Center: {x: 0, y: -40, z: 0}
@@ -4197,3 +4201,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   bfsm: {fileID: 4217166099013942795}
+--- !u!1 &1845378981962517863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2740483952920335339}
+  m_Layer: 7
+  m_Name: FirePosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2740483952920335339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845378981962517863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -140, z: -100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 438948}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
